@@ -7,33 +7,117 @@
   <title>Static Comp 3</title>
 </head>
 <body>
-  <aside>
-    <img src="" alt="User headshot">
-    <a href="">User Name<img src="" alt=""></a>
-    <hr>
-    <h2>Main</h2>
-    <a href=""><img src="" alt="">HOME</a>
-    <a href=""><img src="" alt="">JOBS</a>
-    <a href=""><img src="" alt="">RESUMES</a>
-    <a href=""><img src="" alt="">TASKS</a>
-    <a href=""><img src="" alt="">CALENDAR</a>
-    <hr>
-    <h2>Admin</h2>
-    <a href=""><img src="" alt="">USERS</a>
-    <a href=""><img src="" alt="">LOCATION</a>
-    <a href=""><img src="" alt="">WORKFLOWS</a>
-    <a href=""><img src="" alt="">JOB BOARDS</a>
-    <a href=""><img src="" alt="">SOCIAL</a>
-    <hr>
-    <h2>Categories</h2>
-    <label><input type="checkbox" class="checkbox1">Administrative</label>
-    <label><input type="checkbox" class="checkbox2">Design</label>
-    <label><input type="checkbox" class="checkbox3">Executive</label>
-    <label><input type="checkbox" class="checkbox4">Human Resources</label>
+  <header class="header">
+    <nav class="nav">
+      <button class="nav__btn"></button>
+      <input type="text" class="nav__input" placeholder="Search for a job, task, or resume">
+      <button class="nav__btn"></button>
+      <button class="nav__btn"></button>
+      <button class="nav__btn"></button>
+    </nav>
+    <h1 class="header__h1">Customer Service Representative</h1>
+    <p class="header__p"><img src="" alt="location icon" class="icon">San Francisco, CA ∙ <a href="" class="link">Preview this post</a></p>
+    <button class="header__btn"><span class="open-bullet">•</span>OPEN</button>
+    <button class="header__btn"><img src="" alt="bookmark icon" class="icon"></button>
+    <button class="header__btn"><img src="" alt="edit icon" class="icon"></button>
+    <button class="header__btn"><img src="" alt="delete icon" class="icon"></button>
+    <ul class="list">
+      <li class="list__item"><a href="" class="link">SUMMARY</a></li>
+      <li class="list__item"><a href="" class="link">APPLICANTS</a></li>
+      <li class="list__item"><a href="" class="link">JOB BOARD</a></li>
+      <li class="list__item"><a href="" class="link">INTERVIEWS</a></li>
+      <li class="list__item"><a href="" class="link">ACTIVITY</a></li>
+      <li class="list__item"><a href="" class="link">BROADCAST</a></li>
+      <li class="list__item"><a href="" class="link">NOTIFICATIONS</a></li>
+    </ul>
+  </header>
+  <aside class="aside">
+    <figure class="photo aside__photo">
+      <img class="photo__img" src="" alt="User headshot">
+      <a href="" class="link">
+        <figcaption class="photo__caption">Newton Barley<img src="" alt="" class="icon photo__icon"></figcaption>
+      </a>
+    </figure>
+    <section class="aside__section">
+      <h2 class="aside__h2">Main</h2>
+      <a class="link" href=""><img class="icon" src="" alt="Home Icon">HOME</a>
+      <a class="link" href=""><img class="icon" src="" alt="Jobs Icon">JOBS</a>
+      <a class="link" href=""><img class="icon" src="" alt="Resumes Icon">RESUMES</a>
+      <a class="link" href=""><img class="icon" src="" alt="Tasks Icon">TASKS</a>
+      <a class="link" href=""><img class="icon" src="" alt="Calendar Icon">CALENDAR</a>
+    </section>
+    <section class="aside__section">
+      <h2 class="aside__h2">Administration</h2>  
+      <a class="link" href=""><img class="icon" src="" alt="Users Icon">USERS</a>
+      <a class="link" href=""><img class="icon" src="" alt="Location Icon">LOCATION</a>
+      <a class="link" href=""><img class="icon" src="" alt="Workflow Icon">WORKFLOWS</a>
+      <a class="link" href=""><img class="icon" src="" alt="Job Board Icon">JOB BOARDS</a>
+      <a class="link" href=""><img class="icon" src="" alt="Social Icon">SOCIAL</a>
+    </section>
+    <section class="aside__section">
+      <h2 class="aside__h2">Categories</h2>
+      <label class="aside__label"><input class="checkbox checkbox--yellow" type="checkbox">Administrative</label>
+      <label class="aside__label"><input class="checkbox checkbox--blue" type="checkbox">Design</label>
+      <label class="aside__label"><input class="checkbox checkbox--red" type="checkbox">Executive</label>
+      <label class="aside__label"><input class="checkbox checkbox--green" type="checkbox">Human Resources</label>
+    </section>
   </aside>
-  <nav>Nav</nav>
-  <section>Section 1</section>
-  <section>Section 2</section>
-  <main>Main Content</main>
+  <section class="graphs">
+    <p class="border-graph"><span class="border-graph__span">3,154</span>APPLICANTS</p>
+    <p class="border-graph"><span class="border-graph__span">1,546</span>INTERVIEWS</p>
+    <p class="border-graph"><span class="border-graph__span">912</span>FORWARDS</p>
+    <img src="" alt="A meaningless chart." class="graphs__img">
+    <h2 class="graphs__h2">TOTALS - Out of 5,231 views</h2>
+    <h2 class="graphs__h2">APPLICANTS/DAY</h2>
+  </section>
+  <hr class="line-break">
+  <img src="" alt="" class="icon">
+  <hr class="line-break">
+  <section class="job-description">
+    <h2 class="job-description__h2 job-description--dark-background">JOB DESCRIPTION</h2>
+    <button class="job-description__btn job-description--dark-background"><img src="" alt="Edit button" class="icon">EDIT</button>
+    <h2 class="job-description__h2">POSITION TITLE</h2>
+    <p class="job-description__p">Customer Service Representative</p>
+    <h2 class="job-description__h2">LOCATION</h2>
+    <p class="job-description__p">San Francisco, CA</p>
+    <h2 class="job-description__h2">EMPLOYMENT TYPE</h2>
+    <p class="job-description__p">Full-time</p>
+    <h2 class="job-description__h2">EXPERIENCE</h2>
+    <p class="job-description__p">Mid-level</p>
+    <h2 class="job-description__h2">STATUS</h2>
+    <p class="job-description__p">Open</p>
+    <h2 class="job-description__h2">DESCRIPTION</h2>
+    <p class="job-description__p">The Customer Service Representative is responsible for exchangeing with and providing quality assistance to all radical customers, repsponsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
+    <h2 class="job-description__h2">HIRING LEAD</h2>
+    <figure class="photo job-description__photo">
+      <img class="photo__img" src="" alt="Hiring Manager">
+      <figcaption class="photo__caption">Tom Tizzy</figcaption>
+    </figure>
+    <h2 class="job-description__h2">APPROVED SALARY</h2>
+    <p class="job-description__p">$58,000</p>
+  </section>
+  <section class="social">
+    <button class="social__btn"><img src="" alt="facebook icon" class="icon">Post to Facebook</button>
+    <button class="social__btn"><img src="" alt="twitter icon" class="icon">Tweet this Job</button>
+    <button class="social__btn"><img src="" alt="linkedin icon" class="icon">Post to LinkedIn</button>
+  </section>
+  <section class="exchange">
+    <img src="" alt="globe icon" class="icon">
+    <h2 class="exchange__h2">Link to this Job</h2>
+    <p class="exchange__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+    <input type="text" class="exchange__input" value="https://www.loremipsum.dol/sit/amet/viscitation">
+  </section>
+  <section class="exchange">
+    <img src="" alt="widget icon" class="icon"/>
+    <h2 class="exchange__h2">Use the Button Widget</h2>
+    <p class="exchange__p">This widget embeds the buttons for sharing the job for submitting a resume on your website</p>
+    <input type="text" class="exchange__input" value="<script>lksdjflaksdjfasdfd sdfasdf sdf</script>">
+  </section>
+  <section class="exchange">
+    <img src="" alt="paper airplane icon" class="icon">
+    <h2 class="exchange__h2">Upload Resumes by Email</h2>
+    <p class="exchange__p">You can automatically upload multiple resumes to this job by emailing the address below</p>
+    <input type="email" class="exchange__email" value="tomlizzy@gmail.com">
+  </section>
 </body>
 </html>

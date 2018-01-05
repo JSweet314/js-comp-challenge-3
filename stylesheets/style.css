@@ -1,66 +1,110 @@
-html {
-  font-size: 62.5%;
+/* 
+LAYOUT
+
+header
+  nav
+aside
+  photo
+  checkbox*4
+main
+  graphs
+    border-graph
+  job-description
+    photo
+  social
+  exchange
+*/
+/*
+COLOR PALETTE
+  #FAFAFC
+  #EEF2F6
+  #A0A3A8
+  #7F8BA4
+  #717E93 
+  #5D667A 
+  #374050
+  #64B4C0 
+  #48A3F3  
+  #3580B7     
+  #5170BD  
+  #A26DAB     
+*/
+
+/*
+IDIOMATIC CSS
+
+.selector {
+  Positioning
+  Display & Box Model
+  Other
 }
 
-aside {
-  height: 100vh;
-  width: 17rem;
-  font-size: 1.5rem;
-  padding: 1rem;
-  background-color: #374050;
-  color: #fff;
-  position: fixed;
+*/
+
+body {
+  background-color: #EEF2F6
 }
 
-aside a,
-aside label {
-  display: block;
+.aside {
+  background-color: #374050
 }
+.aside__h2 {}
+.aside__label {}
+.aside__photo {}
+.aside__section {}
 
-input[type=checkbox]{
-  transform: scale(1.5);
-  margin-right: 0.5rem;
-}
+.border-graph {}
+.border-graph__span {}
 
-a {
-  text-decoration: none;
-  color: #fff
-}
+.checkbox {}
+.checkbox--yellow {}
+.checkbox--blue {}
+.checkbox--red {}
+.checkbox--green {}
 
-.checkbox1 {
-  appearance: none;
-  background-color: yellow;
-}
+.exchange {}
+.exchange__email {}
+.exchange__h2 {}
+.exchange__p {}
 
-nav {
-  background-color: orange;
-  display: inline-block;
-  color: black;
-  height: 8rem;
-  border: 1px solid black;
-  position: relative;
-  left: 19rem;
-  width: 81.2%;
-}
+.graphs {}
+.graphs__h2 {}
+.graphs__img {}
 
-section {
-    background-color: orange;
-    display: inline-block;
-    color: black;
-    height: 12rem;
-    border: 1px solid black;
-    position: relative;
-    left: 19rem;
-    width: 81.2%;
+.header {
+  background-color: #fff
 }
+.header__btn {}
+.header__h1 {}
+.header__p {}
 
-main {
-    background-color: grey;
-    display: inline-block;
-    color: black;
-    height: 63.6vh;
-    border: 1px solid black;
-    position: relative;
-    left: 19rem;
-    width: 81.2%;
+.icon {}
+
+.job-description {}
+.job-description__h2 {}
+.job-description__p {}
+.job-description--dark-background {
+  background-color: #7F8BA4
 }
+.job-description__photo {}
+
+.line-break {}
+
+.link {}
+
+.list {}
+.list__item {}
+
+.nav {}
+.nav__btn {}
+.nav__input {}
+
+.open-bullet {}
+
+.photo {}
+.photo__caption {}
+.photo__icon {}
+.photo__img {}
+
+.social {}
+.social__btn {}
