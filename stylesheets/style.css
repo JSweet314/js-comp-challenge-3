@@ -27,7 +27,7 @@ COLOR PALETTE
   #6F6F71
   #374050
   #99C659
-  #64B4C0  
+  #66B9BE
   #48A3F3   
   #3580B7      
   #5170BD   
@@ -107,10 +107,11 @@ html {font-size: 10px;color: #A0A3A8;}
 .photo {}
 .photo__caption {display: inline-block}
 .photo__icon {margin: 0 0 0 0.3rem;}
-.photo__img {width: 8rem;height: 8rem;border-radius: 100%;}
+.photo__img {width: 8rem;border-radius: 100%;vertical-align: middle;}
 .photo__link {margin: 1rem 0}
+.photo__img--small {width:4rem;}
 
-.social {float: right;display: inline-flex;flex-direction: column;width: 30%;margin: 0 1rem 0 0;}
+.social {float: right;display: inline-flex;flex-direction: column;width: 25%;}
 .social__btn {margin: 0.5rem 0;color: #fff;}
 .social__h2 {}
 .social__input {}
