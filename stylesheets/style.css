@@ -1,4 +1,5 @@
-/*LAYOUT
+/*
+LAYOUT
 
 header
   nav
@@ -22,6 +23,7 @@ COLOR PALETTE
   #7F8BA4
   #717E93  
   #5D667A
+  #8891a1
   #6F6F71
   #374050
   #99C659
@@ -29,22 +31,25 @@ COLOR PALETTE
   #48A3F3   
   #3580B7      
   #5170BD   
-  #A26DAB       
+  #A26DAB
+  #303848   
 
 IDIOMATIC CSS
 
-.selector {Positioning; Display & Box Model; Other}*/
+.selector {Positioning; Display & Box Model; Other}
+*/
 
 @import "normalize.css";
 
 body {background-color: #EEF2F6;}
-html {font-size: 10px; color: #A0A3A8;}
+html {font-size: 10px;color: #A0A3A8;}
 
-.aside {position: fixed;top: 0;left: 0;display: flex;flex-direction: column;width: 20%;height: 100%;overflow: auto;background-color: #374050;}
-.aside__h2 {border-top: 1px solid black;font-size: 1rem;color: #5D667A;padding: 3rem 0 0 0;}
-.aside__label {}
-.aside__link {display: block;}
-.aside__photo {}
+.aside {position: fixed;top: 0;left: 0;display: flex;flex-direction: column;width: 15vw;height: 100%;overflow: auto;background-color: #374050;}
+.aside__h2 {border-top: 1px solid black;font-size: 1rem;color: #5D667A;padding: 3rem 0 0 1rem;}
+.aside__label {padding: 0.5rem 1rem;}
+.aside__link {display: block;padding: 1rem 0.5rem;}
+.aside__label:hover, .aside__link:hover {background-color: #303848; color: white;}
+.aside__photo {display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .aside__section {border-top: 1px solid black;}
 
 .border-graph {display: inline-flex;margin: 2rem;flex-direction: column;justify-content: center;align-items: center;border: 1px solid black;}
@@ -56,39 +61,40 @@ html {font-size: 10px; color: #A0A3A8;}
 .checkbox--red {}
 .checkbox--yellow {}
 
-.feature {display: flex;border: 2px solid black;}
+.feature {display: flex;width: 100%;}
 
 .flex-wrapper {display: flex;justify-content: center;align-items: center;}
 
-.graphs {/* display: inline-block; */width: 50%;}
+.graphs {width: 50%;}
 .graphs__h2 {}
 .graphs__img {}
 
-.header {padding: 0 1rem;background-color: #fff;height: 20vh;}
-.header, .main {position: relative; left: 20%;display: inline-block;width: 78.5vw;}
+.header {background-color: #fff;height: 20vh;}
+.header, .main {position: relative;left: 15%;display: inline-block;width: 85vw;}
 .header__btn {float: right;border-radius: 15px;}
 .header__h1 {margin: 0; color: #6F6F71;}
 .header__p {display: inline-block;}
 
-.icon {margin: .5rem 0.5rem .5rem 0;}
+.icon {width:1rem;vertical-align: top;margin: 0rem 0.5rem;}
 
 .link {color: #A0A3A8; text-decoration: none;}
 
 .list {}
 .list__item {display: inline-block;}
 
-.main {display: inline-block;width: 80%;}
+.main {}
 
-.nav {}
-.nav__btn {border-radius: 0;width: 50px;height: 50px;}
-.nav__input {height: 45px;width: 67%;vertical-align: top;}
+.nav {display: flex;}
+.nav__btn {flex: auto;}
+.nav__input {height: 45px;width: 80%;}
 
 .open-bullet {position: relative;top: 0.7rem;color: #99C659;font-size: 3rem;line-height: 0;}
 
 .photo {}
-.photo__caption {}
-.photo__icon {}
-.photo__img {}
+.photo__caption {display: inline-block}
+.photo__icon {margin: 0 0 0 0.3rem;}
+.photo__img {width: 8rem;height: 8rem;border-radius: 100%;}
+.photo__link {margin: 1rem 0}
 
 .social {float: right;display: inline-flex;flex-direction: column;width: 30%;margin: 0 1rem 0 0;}
 .social__btn {margin: 0.5rem 0;}
