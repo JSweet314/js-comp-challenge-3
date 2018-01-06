@@ -41,19 +41,21 @@ IDIOMATIC CSS
 
 @import "normalize.css";
 
+html {font-size: 10px; font-family: sans-serif;color: #A0A3A8;}
 body {background-color: #EEF2F6;}
-html {font-size: 10px;color: #A0A3A8;}
 
 .aside {position: fixed;top: 0;left: 0;display: flex;flex-direction: column;width: 15vw;height: 100%;overflow: auto;background-color: #374050;}
 .aside__h2 {border-top: 1px solid black;font-size: 1rem;color: #5D667A;padding: 3rem 0 0 1rem;}
 .aside__label {padding: 0.5rem 1rem;}
-.aside__link {display: block;padding: 1rem 0.5rem;}
-.aside__label:hover, .aside__link:hover {background-color: #303848; color: white;}
+.aside__link {display: block;padding: 1rem;}
 .aside__photo {display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .aside__section {border-top: 1px solid black;}
+.aside__label:hover, .aside__link:hover {background-color: #303848; color: white;}
 
 .border-graph {display: inline-flex;margin: 2rem;flex-direction: column;justify-content: center;align-items: center;border: 1px solid black;}
 .border-graph__span {display: block;font-size: 5rem;}
+
+.bottom {display: flex;margin: auto;width: 95%;justify-content: space-between;}
 
 .checkbox {margin: .5rem 0.5rem .5rem 0}
 .checkbox--blue {}
@@ -61,17 +63,18 @@ html {font-size: 10px;color: #A0A3A8;}
 .checkbox--red {}
 .checkbox--yellow {}
 
-.feature {display: flex;width: 100%;}
+.feature {display: flex;width: 95%;justify-content: space-between;border-bottom: 1px solid black;margin: 1rem auto;}
 
 .flex-wrapper {display: flex;justify-content: center;align-items: center;}
 
-.graphs {width: 50%;}
-.graphs__h2 {}
+.graphs {display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.graphs__h2 {font-size: 1rem;border: 1px solid black;border-radius: 10px;padding: 0.5rem 1rem;}
+.graphs__div {height: 150px;width: 350px;background-color: blue;}
 .graphs__img {}
 
 .header {background-color: #fff;height: 20vh;}
-.header, .main {position: relative;left: 15%;display: inline-block;width: 85vw;}
-.header__btn {float: right;border-radius: 100%;width: 2rem;margin: 1rem;background-size: 1rem;background-position: center;background-repeat: no-repeat;height: 2rem;}
+.header, .main {position: relative;left: 15%;width: 85vw;}
+.header__btn {float: right;border-radius: 100%;width: 2rem;height: 2rem;margin: 1rem;background-size: 1rem;background-position: center;background-repeat: no-repeat;}
 .header__h1 {margin: 0; color: #6F6F71;}
 .header__p {display: inline-block;}
 .header__btn--bookmark {background-image: url("../images/bookmark-icon.svg")}
@@ -79,7 +82,7 @@ html {font-size: 10px;color: #A0A3A8;}
 .header__btn--delete {background-image: url("../images/delete-icon.svg")}
 .header__btn--open {border-radius: 15px; width: auto;}
 
-.icon {width:1rem;vertical-align: top;margin: 0rem 0.5rem;}
+.icon {width:1rem;vertical-align: top;margin: 0 0.5rem 0 0;}
 
 .link {color: #A0A3A8; text-decoration: none;}
 
@@ -120,14 +123,19 @@ html {font-size: 10px;color: #A0A3A8;}
 .social__btn--twitter {background-color: #48A3F3;}
 .social__btn--linkedin {background-color: #3580B7;}
 
-.table {display: inline-block;width: 60%;}
-.table__btn {
-    background-color: #8891a1;
-    border: none;
-    color: #fff;
-}
-.table__data {}
+.table {width: 70%;background-color: #fff;}
+.table__btn {background-color: #8891a1;border: none;color: #fff;}
+.table__data {border-top: 1px solid black;}
 .table__heading {background-color: #7F8BA4;color: #fff;}
 .table__photo {margin: 0;}
-.table__row-title {
-}
+.table__row-title {border-top: 1px solid black;}
+
+/*
+STYLING FOR SVG BAR CHART
+.bar {fill: #66B9BE;}
+.bar:hover {fill: #48A3F3;}
+.axis {font: 10px sans-serif;}
+.x.axis path {display: none;}
+.axis path,
+.axis line {fill: none;stroke: #000;shape-rendering: crispEdges;}
+*/
