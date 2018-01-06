@@ -21,6 +21,7 @@ COLOR PALETTE
   #7F8BA4
   #717E93  
   #5D667A
+  #8891a1
   #6F6F71
   #374050
   #99C659
@@ -39,11 +40,18 @@ IDIOMATIC CSS
 body {background-color: #EEF2F6;}
 html {font-size: 10px; color: #A0A3A8;}
 
-.aside {position: fixed;top: 0;left: 0;display: flex;flex-direction: column;width: 20%;height: 100%;overflow: auto;background-color: #374050;}
-.aside__h2 {border-top: 1px solid black;font-size: 1rem;color: #5D667A;padding: 3rem 0 0 0;}
-.aside__label {}
-.aside__link {display: block;}
-.aside__photo {}
+.aside {position: fixed;top: 0;left: 0;display: flex;flex-direction: column;width: 15%;height: 100%;overflow: auto;background-color: #374050;}
+.aside__h2 {border-top: 1px solid black;font-size: 1rem;color: #5D667A;padding: 3rem 0 0 1rem;}
+.aside__label {
+    padding: 0 1rem;
+}
+.aside__link {display: block;margin: 1rem 0;padding: 0 0.5rem;}
+.aside__photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .aside__section {border-top: 1px solid black;}
 
 .border-graph {display: inline-flex;margin: 2rem;flex-direction: column;justify-content: center;align-items: center;border: 1px solid black;}
@@ -64,7 +72,7 @@ html {font-size: 10px; color: #A0A3A8;}
 .graphs__img {}
 
 .header {padding: 0 1rem;background-color: #fff;height: 20vh;}
-.header, .main {position: relative; left: 20%;display: inline-block;width: 78.5vw;}
+.header, .main {position: relative;left: 15%;display: inline-block;width: 83.2vw;}
 .header__btn {float: right;border-radius: 15px;}
 .header__h1 {margin: 0; color: #6F6F71;}
 .header__p {display: inline-block;}
