@@ -68,13 +68,13 @@ body {background-color: #EEF2F6;}
 
 .container {}
 
-.feature {display: flex;width: 95%;justify-content: space-between;border-bottom: 1px solid black;margin: 1rem auto;}
+.feature {display: flex;width: 95%;border-bottom: 1px solid black;margin: 1rem auto;justify-content: space-between;}
 
 .flex-wrapper {display: flex;justify-content: center;align-items: center;}
 .flex-wrapper--space-between {justify-content: space-between;width: 95%;margin: 3rem auto;}
 
 .graphs {display: flex;flex-direction: column;justify-content: center;align-items: center;}
-.graphs__h2 {font-size: 1rem;border: 1px solid black;border-radius: 10px;padding: 0.5rem 1rem;}
+.graphs__h2 {font-size: 2rem;border: 1px solid black;border-radius: 20px 20px;padding: 0.5rem 1rem;}
 .graphs__div {height: 150px;width: 350px;background-color: blue;}
 .graphs__img {}
 
@@ -147,6 +147,7 @@ body {background-color: #EEF2F6;}
 
 
 /*STYLING FOR SVG BAR CHART*/
+.bar-graph {display: block;height: 100%;width: 125%;}
 .bar {fill: #66B9BE;}
 .bar--empty {fill: #CCCDCE;}
 .bar:hover {fill: #48A3F3;}
