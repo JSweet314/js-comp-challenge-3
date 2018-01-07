@@ -53,9 +53,6 @@ body {background-color: #EEF2F6;}
 .aside__section {border-top: 1px solid black;}
 .aside__label:hover, .aside__link:hover {background-color: #303848; color: white;}
 
-.border-graph {display: inline-flex;margin: 2rem;flex-direction: column;justify-content: center;align-items: center;border: 1px solid black;}
-.border-graph__span {display: block;font-size: 5rem;}
-
 .bottom {display: flex;margin: auto;width: 95%;justify-content: space-between;}
 
 .checkbox {margin: .5rem 0.5rem .5rem 0}
@@ -64,15 +61,20 @@ body {background-color: #EEF2F6;}
 .checkbox--red {}
 .checkbox--yellow {}
 
+.circle-graph {}
+.circle-graph__text {transform: translateY(.25em);}
+.circle-graph__text--number {text-anchor: middle;font-size: .75em;transform: translateY(-0.35em);}
+.circle-graph__text--label {text-anchor: middle;font-size: 0.25em;transform: translateY(0.55em);background-color: white;}
+
 .container {}
 
-.feature {display: flex;width: 95%;justify-content: space-between;border-bottom: 1px solid black;margin: 1rem auto;}
+.feature {display: flex;width: 95%;border-bottom: 1px solid black;margin: 1rem auto;justify-content: space-between;}
 
 .flex-wrapper {display: flex;justify-content: center;align-items: center;}
 .flex-wrapper--space-between {justify-content: space-between;width: 95%;margin: 3rem auto;}
 
 .graphs {display: flex;flex-direction: column;justify-content: center;align-items: center;}
-.graphs__h2 {font-size: 1rem;border: 1px solid black;border-radius: 10px;padding: 0.5rem 1rem;}
+.graphs__h2 {font-size: 2rem;border: 1px solid black;border-radius: 20px 20px;padding: 0.5rem 1rem;}
 .graphs__div {height: 150px;width: 350px;background-color: blue;}
 .graphs__img {}
 
@@ -143,12 +145,13 @@ body {background-color: #EEF2F6;}
 .table__photo {margin: 0;}
 .table__row-title {border-top: 1px solid black;}
 
-/*
-STYLING FOR SVG BAR CHART
+
+/*STYLING FOR SVG BAR CHART*/
+.bar-graph {display: block;height: 100%;width: 125%;}
 .bar {fill: #66B9BE;}
+.bar--empty {fill: #CCCDCE;}
 .bar:hover {fill: #48A3F3;}
-.axis {font: 10px sans-serif;}
-.x.axis path {display: none;}
-.axis path,
-.axis line {fill: none;stroke: #000;shape-rendering: crispEdges;}
-*/
+.bar--empty:hover {fill: #CCCDCE;}
+.x-axis, .y-axis {font: 10px sans-serif;}
+.x-axis__text {font-weight: bold}
+.y-axis__text {fill: #CCCDCE}
