@@ -45,15 +45,44 @@ IDIOMATIC CSS
 html {font-size: 10px; font-family: sans-serif;color: #A0A3A8;}
 body {background-color: #EEF2F6;}
 
+.photo {
+    width: 85%;
+}
+.photo__caption {display: inline-block}
+.photo__icon {margin: 0 0 0 0.3rem;}
+.photo__img {width: 8rem;border-radius: 100%;vertical-align: middle;}
+.photo__link {margin: 1rem 0}
+.photo__img--small {width:4rem;}
+
 .aside {position: fixed;top: 0;left: 0;display: flex;flex-direction: column;width: 15vw;height: 100%;overflow: auto;background-color: #374050;}
 .aside__h2 {border-top: 1px solid black;font-size: 1rem;color: #5D667A;padding: 3rem 0 0 1rem;}
 .aside__label {padding: 0.5rem 1rem;}
-.aside__link {display: block;padding: 1rem;}
-.aside__photo {display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.aside__icon-link {padding: 1rem 2.5rem;}
+.aside__photo {width: 10rem;min-width: 8.5rem;display: flex;flex-direction: column;justify-content: center;align-items: center;margin: 2rem auto;}
 .aside__section {border-top: 1px solid black;}
-.aside__label:hover, .aside__link:hover {background-color: #303848; color: white;}
+.aside__label:hover, .aside__icon-link:hover {background-color: #303848; color: white;}
+.aside__icon-link--home {background: url("../images/home-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--jobs {background: url("../images/briefcase-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--resumes {background: url("../images/resume-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--tasks {background: url("../images/tasks-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--calendar {background: url("../images/calendar-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--users {background: url("../images/users-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--location {background: url("../images/location-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--workflows {background: url("../images/workflows-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--job-boards {background: url("../images/job-boards-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--social {background: url("../images/social-icon.svg") 1rem no-repeat;background-size: 1rem 1rem;}
+.aside__icon-link--home:hover {background-image: url("../images/home-icon-white.svg");}
+.aside__icon-link--jobs:hover {background-image: url("../images/briefcase-icon-white.svg");}
+.aside__icon-link--resumes:hover {background-image: url("../images/resume-icon-white.svg");}
+.aside__icon-link--tasks:hover {background-image: url("../images/tasks-icon-white.svg");}
+.aside__icon-link--calendar:hover {background-image: url("../images/calendar-icon-white.svg");}
+.aside__icon-link--users:hover {background-image: url("../images/users-icon-white.svg");}
+.aside__icon-link--location:hover {background-image: url("../images/location-icon-white.svg");}
+.aside__icon-link--workflows:hover {background-image: url("../images/workflows-icon-white.svg");}
+.aside__icon-link--job-boards:hover {background-image: url("../images/job-boards-icon-white.svg");}
+.aside__icon-link--social:hover {background-image: url("../images/social-icon-white.svg");}
 
-.bottom {display: flex;margin: auto;width: 95%;justify-content: space-between;}
+.bar-chart {height: 15rem;}
 
 .checkbox {margin: .5rem 0.5rem .5rem 0}
 .checkbox--blue {}
@@ -61,7 +90,8 @@ body {background-color: #EEF2F6;}
 .checkbox--red {}
 .checkbox--yellow {}
 
-.circle-graph {}
+.circle-graph {
+}
 .circle-graph__text {transform: translateY(.25em);}
 .circle-graph__text--number {text-anchor: middle;font-size: .75em;transform: translateY(-0.35em);}
 .circle-graph__text--label {text-anchor: middle;font-size: 0.25em;transform: translateY(0.55em);background-color: white;}
@@ -73,8 +103,8 @@ body {background-color: #EEF2F6;}
 .flex-wrapper {display: flex;justify-content: center;align-items: center;}
 .flex-wrapper--space-between {justify-content: space-between;width: 95%;margin: 3rem auto;}
 
-.graphs {display: flex;flex-direction: column;justify-content: center;align-items: center;}
-.graphs__h2 {font-size: 2rem;border: 1px solid black;border-radius: 20px 20px;padding: 0.5rem 1rem;}
+.graphs {display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
+.graphs__h2 {font-size: 2rem;border: 1px solid lightgrey;border-radius: 20px 20px;padding: 0.5rem 1rem;}
 .graphs__div {height: 150px;width: 350px;background-color: blue;}
 .graphs__img {}
 
@@ -104,6 +134,7 @@ body {background-color: #EEF2F6;}
 .list__link:hover {color: #48A3F3;}
 
 .main {}
+.main__bottom {display: flex;margin: auto;width: 95%;justify-content: space-between;}
 
 .nav {display: flex;border-bottom: 1px solid lightgrey;}
 .nav__btn {flex: auto;border: none;border-right: 1px solid lightgrey;background-size: 1.5rem; background-repeat: no-repeat;background-position: center;}
@@ -120,14 +151,9 @@ body {background-color: #EEF2F6;}
 .nav__btn:hover {background-color: #48A3F3;}
 .nav__search::placeholder {color: lightgrey;}
 
-.open-bullet {position: relative;top: 0.7rem;color: #99C659;font-size: 3rem;line-height: 0;padding: 0 0.2rem 0 0;}
+.status-bullet {position: relative;top: 0.7rem;color: #99C659;font-size: 3rem;line-height: 0;padding: 0 0.2rem 0 0;}
 
-.photo {}
-.photo__caption {display: inline-block}
-.photo__icon {margin: 0 0 0 0.3rem;}
-.photo__img {width: 8rem;border-radius: 100%;vertical-align: middle;}
-.photo__link {margin: 1rem 0}
-.photo__img--small {width:4rem;}
+
 
 .social {float: right;display: inline-flex;flex-direction: column;width: 25%;}
 .social__btn {margin: 0.5rem 0;color: #fff;}
@@ -144,14 +170,3 @@ body {background-color: #EEF2F6;}
 .table__heading {background-color: #7F8BA4;color: #fff;}
 .table__photo {margin: 0;}
 .table__row-title {border-top: 1px solid black;}
-
-
-/*STYLING FOR SVG BAR CHART*/
-.bar-graph {display: block;height: 100%;width: 125%;}
-.bar {fill: #66B9BE;}
-.bar--empty {fill: #CCCDCE;}
-.bar:hover {fill: #48A3F3;}
-.bar--empty:hover {fill: #CCCDCE;}
-.x-axis, .y-axis {font: 10px sans-serif;}
-.x-axis__text {font-weight: bold}
-.y-axis__text {fill: #CCCDCE}
