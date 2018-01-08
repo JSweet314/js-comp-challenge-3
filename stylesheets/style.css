@@ -56,7 +56,9 @@ body {background-color: #EEF2F6;}
 .checkbox--green {}
 .checkbox--red {}
 .checkbox--yellow {}
-.circle-graph {}
+.circle-graph {
+    margin: 0 2rem 0 0;
+}
 .circle-graph__text {transform: translateY(.25em);}
 .circle-graph__text--label {text-anchor: middle;font-size: 0.25em;transform: translateY(0.55em);background-color: white;}
 .circle-graph__text--number {text-anchor: middle;font-size: .75em;transform: translateY(-0.35em);}
@@ -64,7 +66,7 @@ body {background-color: #EEF2F6;}
 .feature {display: flex;width: 95%;border-bottom: 1px solid lightgrey;margin: 4rem auto;}
 .flex-wrapper {display: flex;justify-content: center;align-items: center;}
 .flex-wrapper--space-between {justify-content: space-between;width: 95%;margin: 3rem auto;}
-.graphs {display: flex;margin: 0 0 0 1rem;flex-direction: column;justify-content: space-between;align-items: center;}
+.graphs {display: flex;/* margin: 0 0 0 1rem; */flex-direction: column;justify-content: space-between;align-items: center;}
 .graphs__div {height: 150px;width: 350px;background-color: blue;}
 .graphs__h2 {font-size: 1rem;border: 1px solid lightgrey;border-radius: 20px 20px;padding: 0.5rem 1rem;margin: 0 0 4rem 0;}
 .graphs__img {}
