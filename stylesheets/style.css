@@ -45,9 +45,7 @@ IDIOMATIC CSS
 html {font-size: 10px; font-family: sans-serif;color: #A0A3A8;}
 body {background-color: #EEF2F6;}
 
-.photo {
-    width: 85%;
-}
+.photo {}
 .photo__caption {display: inline-block}
 .photo__icon {margin: 0 0 0 0.3rem;}
 .photo__img {width: 8rem;border-radius: 100%;vertical-align: middle;}
@@ -82,7 +80,7 @@ body {background-color: #EEF2F6;}
 .aside__icon-link--job-boards:hover {background-image: url("../images/job-boards-icon-white.svg");}
 .aside__icon-link--social:hover {background-image: url("../images/social-icon-white.svg");}
 
-.bar-chart {height: 15rem;}
+.bar-chart {width: 100%;position: relative;left: 2rem;bottom: 1rem;}
 
 .checkbox {margin: .5rem 0.5rem .5rem 0}
 .checkbox--blue {}
