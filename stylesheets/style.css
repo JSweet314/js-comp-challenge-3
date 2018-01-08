@@ -57,7 +57,7 @@ body {background-color: #EEF2F6;}
 .checkbox--red {}
 .checkbox--yellow {}
 .circle-graph {margin: 0 0.5rem 0 0;}
-.circle-graph__text {transform: translateY(.25em);}
+.circle-graph__text {transform: translateY(0.55em);}
 .circle-graph__text--label {text-anchor: middle;font-size: 0.25em;transform: translateY(0.55em);background-color: white;}
 .circle-graph__text--number {text-anchor: middle;font-size: .75em;transform: translateY(-0.35em);}
 .container {}
