@@ -45,9 +45,9 @@ IDIOMATIC CSS
 html {font-size: 10px; font-family: sans-serif;color: #A0A3A8;}
 body {background-color: #EEF2F6;}
 
-.aside {position: fixed;top: 0;left: 0;display: flex;flex-direction: column;width: 15vw;height: 100%;overflow: auto;background-color: #374050;}
+.aside {position: fixed;top: 0;left: 0;display: flex;flex-direction: column;width: 15vw;height: 100%;overflow: auto;background-color: #374050;min-width: 15vw;}
 .aside__h2 {border-top: 1px solid black;font-size: 1rem;color: #5D667A;padding: 3rem 0 0 1rem;}
-.aside__label {padding: 0.5rem 1rem;}
+.aside__label {padding: 0.5rem 1rem;min-width: 11rem;}
 .aside__photo {width: 10rem;min-width: 8.5rem;display: flex;flex-direction: column;justify-content: center;align-items: center;margin: 1rem auto;}
 .aside__section {border-top: 1px solid black;}
 .bar-chart {width: 100%;}
@@ -57,7 +57,7 @@ body {background-color: #EEF2F6;}
 .checkbox--red {}
 .checkbox--yellow {}
 .circle-graph {
-    margin: 0 2rem 0 0;
+    margin: 0 0.5rem 0 0;
 }
 .circle-graph__text {transform: translateY(.25em);}
 .circle-graph__text--label {text-anchor: middle;font-size: 0.25em;transform: translateY(0.55em);background-color: white;}
@@ -70,6 +70,7 @@ body {background-color: #EEF2F6;}
 .graphs__div {height: 150px;width: 350px;background-color: blue;}
 .graphs__h2 {font-size: 1rem;border: 1px solid lightgrey;border-radius: 20px 20px;padding: 0.5rem 1rem;margin: 0 0 4rem 0;}
 .graphs__img {}
+.graphs--margin-right {margin: 0 1.5rem 0 0;}
 .header {background-color: #fff;}
 .header, .main {position: relative;left: 15%;width: 85vw;}
 .header__btn {float: right;border-radius: 100%;width: 2rem;height: 2rem;margin: 1rem;background-size: 1rem;background-position: center;background-repeat: no-repeat;}
@@ -153,3 +154,13 @@ body {background-color: #EEF2F6;}
 .table__heading {background-color: #7F8BA4;color: #fff;}
 .table__photo {margin: 0;}
 .table__row-title {border-top: 1px solid black;}
+
+@media screen and (max-width: 800px){
+  html {
+    /*font-size: 8px;*/
+  }
+
+  .list__item {
+    margin: 0 1rem 0 0;
+  }
+}
