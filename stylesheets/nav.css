@@ -1,0 +1,77 @@
+/*
+NAV LAYOUT
+
+nav
+  nav__btn --side-menu
+  nav__search
+  nav__btn --add-contact
+  nav__btn --schedule
+  nav__btn --dots-menu
+end
+*/
+
+.nav {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+
+.nav__btn {
+  flex: auto;
+  border: none;
+  border-right: 1px solid lightgrey;
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 6rem;
+}
+
+.nav__btn:hover {
+  background-color: #48A3F3;
+}
+
+.nav__btn--add-contact {
+  background-image: url("../images/add-contact-icon.svg");
+}
+
+.nav__btn--add-contact:hover {
+  background-image: url("../images/add-contact-icon-white.svg");
+}
+
+.nav__btn--dots-menu {
+  background-image: url("../images/dots-menu.svg");
+}
+
+.nav__btn--dots-menu:hover {
+  background-image: url("../images/dots-menu-white.svg");
+}
+
+.nav__btn--schedule {
+  background-image: url("../images/schedule-icon.svg");
+}
+
+.nav__btn--schedule:hover {
+  background-image: url("../images/schedule-icon-white.svg");
+}
+
+.nav__btn--side-menu {
+  background-image: url("../images/toggle-menu-icon-clicked.svg");
+}
+
+.nav__btn--side-menu:hover {
+  background-image: url("../images/toggle-menu-icon-white.svg");
+}
+
+.nav__search {
+  height: 6rem;
+  border: none;
+  border-right: 1px solid lightgrey;
+  width: 80%;
+  background: url("../images/search-icon.svg") 1rem no-repeat;
+  background-size: 1rem 1rem;
+  padding: 0 0 0 3.5rem;
+  font-size: 1.5rem;
+}
+
+.nav__search::placeholder {
+  color: lightgrey;
+}

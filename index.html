@@ -6,139 +6,164 @@
   <title>Static Comp 3</title>
 </head>
 <body>
+  <nav class="nav">
+    <button class="nav__btn nav__btn--side-menu" aria-label="view side menu"></button>
+    <input type="search" class="nav__search" placeholder="Search for a job, task, or resume" aria-label="search bar">
+    <button class="nav__btn nav__btn--add-contact" aria-label="view contacts"></button>
+    <button class="nav__btn nav__btn--schedule" aria-label="view calendar"></button>
+    <button class="nav__btn nav__btn--dots-menu" aria-label="view main menu"></button>
+  </nav>
+  <aside class="aside">
+    <figure class="aside-photo">
+      <img class="aside-photo__img" src="images/yogi-headshot.jpeg" alt="User headshot">
+      <figcaption class="aside-photo__caption">Newton Barley</figcaption>
+    </figure>
+    <h2 class="aside__h2">Main</h2>
+    <ul class="aside__link-list">
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--home" href="">HOME</a>
+      </li>
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--jobs" href="">JOBS</a>
+      </li>
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--resumes" href="">RESUMES</a>
+      </li>
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--tasks" href="">TASKS</a>
+      </li>
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--calendar" href="">CALENDAR</a>
+      </li>
+    </ul>
+    <h2 class="aside__h2">Admin</h2>
+    <ul class="aside__link-list">
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--users" href="">USERS</a>
+      </li>
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--location" href="">LOCATION</a>
+      </li>
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--workflows" href="">WORKFLOWS</a>
+      </li>
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--job-boards" href="">JOB BOARDS</a>
+      </li>
+      <li class="aside__list-item">
+        <a class="aside__link aside__link--social" href="">SOCIAL</a>
+      </li>
+    </ul>
+    <h2 class="aside__h2">Categories</h2>
+    <form action="" class="aside__form">
+      <label class="aside__label"><input class="aside-checkbox aside-checkbox--yellow" type="checkbox">Administrative</label>
+      <label class="aside__label"><input class="aside-checkbox aside-checkbox--blue" type="checkbox">Design</label>
+      <label class="aside__label"><input class="aside-checkbox aside-checkbox--red" type="checkbox">Executive</label>
+      <label class="aside__label"><input class="aside-checkbox aside-checkbox--green " type="checkbox">Human Resources</label>
+    </form>
+  </aside>
   <header class="header">
-    <nav class="nav">
-      <button class="nav__btn nav__btn--side-menu" aria-label="view side menu"></button>
-      <input type="search" class="nav__search" placeholder="Search for a job, task, or resume" aria-label="search bar">
-      <button class="nav__btn nav__btn--add-contact" aria-label="view contacts"></button>
-      <button class="nav__btn nav__btn--schedule" aria-label="view calendar"></button>
-      <button class="nav__btn nav__btn--dots-menu" aria-label="view main menu"></button>
-    </nav>
-    <div class="flex-wrapper flex-wrapper--space-between">
-      <div class="container">
+    <div class="header__display-wrapper">
+      <div>
         <h1 class="header__h1">Customer Service Representative</h1>
         <p class="header__p">
-          <img src="images/location-icon.svg" alt="location icon" class="icon">
-          San Francisco, CA ∙ <a href="" class="link link--blue">Preview this post</a></p>
+          <img src="images/location-icon.svg" alt="location icon" class="header__icon">
+          San Francisco, CA ∙ <a href="" class="header__link header__link--blue">Preview this post</a>
+        </p>
       </div>
-      <div class="container">
+      <div>
         <button class="header__btn header__btn--delete"></button>
         <button class="header__btn header__btn--edit"></button>
         <button class="header__btn header__btn--bookmark"></button>
-        <button class="header__btn header__btn--open"><span class="status-bullet">•</span>OPEN</button>
+        <button class="header__btn header__btn--open">OPEN</button>
       </div>
     </div>
-    <ul class="list">
-      <li class="list__item list__item--selected"><a href="" class="link link--active-bold">SUMMARY</a></li>
-      <li class="list__item"><a href="" class="link list__link">APPLICANTS</a></li>
-      <li class="list__item"><a href="" class="link list__link">JOB BOARD</a></li>
-      <li class="list__item"><a href="" class="link list__link">INTERVIEWS</a></li>
-      <li class="list__item"><a href="" class="link list__link">ACTIVITY</a></li>
-      <li class="list__item"><a href="" class="link list__link">BROADCAST</a></li>
-      <li class="list__item"><a href="" class="link list__link">NOTIFICATIONS</a></li>
+    <ul class="header__link-list">
+      <li class="header__list-item header__list-item--selected"><a href="" class="header__link header__link--active-bold">SUMMARY</a></li>
+      <li class="header__list-item"><a href="" class="header__link">APPLICANTS</a></li>
+      <li class="header__list-item"><a href="" class="header__link">JOB BOARD</a></li>
+      <li class="header__list-item"><a href="" class="header__link">INTERVIEWS</a></li>
+      <li class="header__list-item"><a href="" class="header__link">ACTIVITY</a></li>
+      <li class="header__list-item"><a href="" class="header__link">BROADCAST</a></li>
+      <li class="header__list-item"><a href="" class="header__link">NOTIFICATIONS</a></li>
     </ul>
   </header>
-  <aside class="aside">
-    <figure class="photo aside__photo">
-      <img class="photo__img" src="images/yogi-headshot.jpeg" alt="User headshot">
-      <a href="" class="link icon-link icon-link--down-arrow">
-        <figcaption class="photo__caption">Newton Barley</figcaption>
-      </a>
-    </figure>
-    <h2 class="aside__h2">Main</h2>
-    <a class="link icon-link icon-link--home" href="">HOME</a>
-    <a class="link icon-link icon-link--jobs" href="">JOBS</a>
-    <a class="link icon-link icon-link--resumes" href="">RESUMES</a>
-    <a class="link icon-link icon-link--tasks" href="">TASKS</a>
-    <a class="link icon-link icon-link--calendar" href="">CALENDAR</a>
-    <h2 class="aside__h2">Admin</h2>
-    <a class="link icon-link icon-link--users" href="">USERS</a>
-    <a class="link icon-link icon-link--location" href="">LOCATION</a>
-    <a class="link icon-link icon-link--workflows" href="">WORKFLOWS</a>
-    <a class="link icon-link icon-link--job-boards" href="">JOB BOARDS</a>
-    <a class="link icon-link icon-link--social" href="">SOCIAL</a>
-    <h2 class="aside__h2">Categories</h2>
-    <label class="aside__label"><input class="checkbox checkbox--yellow" type="checkbox">Administrative</label>
-    <label class="aside__label"><input class="checkbox checkbox--blue" type="checkbox">Design</label>
-    <label class="aside__label"><input class="checkbox checkbox--red" type="checkbox">Executive</label>
-    <label class="aside__label"><input class="checkbox checkbox--green" type="checkbox">Human Resources</label>
-  </aside>
   <main class="main">
     <div class="feature">
       <section class="graphs graphs--margin-right">
-        <div class="flex-wrapper">
-          <svg class="circle-graph" width="100%" height="100%" viewBox="0 0 36 40">
+        <div class="graphs__display-wrapper">
+          <svg class="circle-graph circle-graph--left" viewBox="0 0 36 40">
             <circle class="circle-graph__ring" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-            <circle class="circle-graph__segment" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#66B9BE" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="-25"></circle>
-            <g class=circle-graph__text>
-              <text class="circle-graph__text--number" x="50%" y="50%">3,154</text>
-              <text class="circle-graph__text--label" x="50%" y="50%">APPLICANTS</text>
+            <circle class="circle-graph__segment" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#66B9BE" stroke-width="3" stroke-dasharray="79 21" stroke-dashoffset="-26"></circle>
+            <g class=circle-graph__text-group>
+              <text class="circle-graph__text circle-graph__text--number" x="50%" y="50%">3,154</text>
+              <text class="circle-graph__text circle-graph__text--label" x="50%" y="50%">APPLICANTS</text>
             </g>
           </svg>
-          <svg class="circle-graph" width="100%" height="100%" viewBox="0 0 36 40">
+          <svg class="circle-graph" viewBox="0 0 36 40">
             <circle class="circle-graph__ring" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-            <circle class="circle-graph__segment" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#3580B7" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="-25"></circle>
-            <g class=circle-graph__text>
-              <text class="circle-graph__text--number" x="50%" y="50%">1,546</text>
-              <text class="circle-graph__text--label" x="50%" y="50%">INTERVIEWS</text>
+            <circle class="circle-graph__segment" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#3580B7" stroke-width="3" stroke-dasharray="39 61" stroke-dashoffset="-26"></circle>
+            <g class=circle-graph__text-group>
+              <text class="circle-graph__text circle-graph__text--number" x="50%" y="50%">1,546</text>
+              <text class="circle-graph__text circle-graph__text--label" x="50%" y="50%">INTERVIEWS</text>
             </g>
           </svg>
-          <svg class="circle-graph" width="100%" height="100%" viewBox="0 0 36 40">
+          <svg class="circle-graph circle-graph--right" viewBox="0 0 36 40">
             <circle class="circle-graph__ring" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-            <circle class="circle-graph__segment" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#A26DAB" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="-25"></circle>
-            <g class=circle-graph__text>
-              <text class="circle-graph__text--number" x="50%" y="50%">912</text>
-              <text class="circle-graph__text--label" x="50%" y="50%">FORWARDS</text>
+            <circle class="circle-graph__segment" cx="18" cy="22" r="15.91549430918954" fill="transparent" stroke="#A26DAB" stroke-width="3" stroke-dasharray="19 81" stroke-dashoffset="-26"></circle>
+            <g class=circle-graph__text-group>
+              <text class="circle-graph__text circle-graph__text--number" x="50%" y="50%">912</text>
+              <text class="circle-graph__text circle-graph__text--label" x="50%" y="50%">FORWARDS</text>
             </g>
           </svg>
         </div>
         <h2 class="graphs__h2">TOTALS - Out of 5,231 views</h2>
       </section>
       <section class="graphs">
-        <img src="images/bar-chart-crop.png" alt="a beautiful graph" class="bar-chart">
+        <img src="images/bar-chart-crop.png" alt="a beautiful graph" class="graphs__img">
         <h2 class="graphs__h2">APPLICANTS/DAY</h2>
       </section>
     </div>
     <div class="main__bottom">
-      <section class="grid-table">
-        <h2 class="grid-table__title grid-table__heading grid-table__heading--pad-left">JOB DESCRIPTION</h2>
-        <p class="grid-table__description grid-table__heading"><button class="grid-table__btn"><img src="images/edit-icon-white.svg" alt="Edit button" class="icon">EDIT</button></p>
-        <h2 class="grid-table__title grid-table--top-entry">POSITION TITLE</h2>
-        <p class="grid-table__description grid-table--top-entry">Customer Service Representative</p>
-        <h2 class="grid-table__title">LOCATION</h2>
-        <p class="grid-table__description">San Francisco, CA</p>
-        <h2 class="grid-table__title">EMPLOYMENT TYPE</h2>
-        <p class="grid-table__description">Full-time</p>
-        <h2 class="grid-table__title">EXPERIENCE</h2>
-        <p class="grid-table__description">Mid-level</p>
-        <h2 class="grid-table__title">STATUS</h2>
-        <p class="grid-table__description">Open</p>
-        <h2 class="grid-table__title grid-table--align-self-start">DESCRIPTION</h2>
-        <p class="grid-table__description grid-table__description--pad-top-bottom">The Customer Service Representative is responsible for socialing with and providing quality assistance to all radical customers, repsponsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
-        <h2 class="grid-table__title">HIRING LEAD</h2>
-        <figure class="photo grid-table__description">
-          <img class="photo__img photo__img--small" src="images/hiring-manager.jpeg" alt="Hiring Manager">
-          <figcaption class="photo__caption">Tom Tizzy</figcaption>
+      <section class="info-table">
+        <h2 class="info-table__title info-table--heading info-table__heading--pad-left">JOB DESCRIPTION</h2>
+        <p class="info-table__description info-table--heading"><button class="info-table__btn"><img src="images/edit-icon-white.svg" alt="Edit button" class="info-table__icon">EDIT</button></p>
+        <h2 class="info-table__title info-table--top-entry">POSITION TITLE</h2>
+        <p class="info-table__description info-table--top-entry">Customer Service Representative</p>
+        <h2 class="info-table__title">LOCATION</h2>
+        <p class="info-table__description">San Francisco, CA</p>
+        <h2 class="info-table__title">EMPLOYMENT TYPE</h2>
+        <p class="info-table__description">Full-time</p>
+        <h2 class="info-table__title">EXPERIENCE</h2>
+        <p class="info-table__description">Mid-level</p>
+        <h2 class="info-table__title">STATUS</h2>
+        <p class="info-table__description">Open</p>
+        <h2 class="info-table__title info-table--align-self-start">DESCRIPTION</h2>
+        <p class="info-table__description info-table__description--pad-top-bottom">The Customer Service Representative is responsible for socialing with and providing quality assistance to all radical customers, repsponsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
+        <h2 class="info-table__title">HIRING LEAD</h2>
+        <figure class="info-table__photo">
+          <img class="info-table__img" src="images/hiring-manager.jpeg" alt="Hiring Manager">
+          <figcaption class="info-table__caption">Tom Tizzy</figcaption>
         </figure>
-        <h2 class="grid-table__title">APPROVED SALARY</h2>
-        <p class="grid-table__description">$58,000</p>
+        <h2 class="info-table__title">APPROVED SALARY</h2>
+        <p class="info-table__description">$58,000</p>
       </section>
       <section class="social">
         <button class="social__btn social__btn--facebook">Post to Facebook</button>
         <button class="social__btn social__btn--twitter">Tweet this Job</button>
         <button class="social__btn social__btn--linkedin">Post to LinkedIn</button>
         <h2 class="social__h2 social__h2--remove-border-padding">
-          <img src="images/globe-icon.svg" alt="globe icon" class="icon social__icon">
+          <img src="images/globe-icon.svg" alt="globe icon" class="social__icon">
         Link to this Job</h2>
         <p class="social__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
         <input type="text" class="social__input" value="https://www.loremipsum.dol/sit/amet/viscitation">
         <h2 class="social__h2">
-          <img src="images/widget-icon.svg" alt="widget icon" class="icon social__icon"/>
+          <img src="images/widget-icon.svg" alt="widget icon" class="social__icon"/>
         Use the Button Widget</h2>
         <p class="social__p">This widget embeds the buttons for sharing the job for submitting a resume on your website</p>
         <input type="text" class="social__input" value="<script>lksdjflaksdjfasdfd sdfasdf sdf</script>">
         <h2 class="social__h2">
-          <img src="images/paper-plane.svg" alt="paper airplane icon" class="icon social__icon">
+          <img src="images/paper-plane.svg" alt="paper airplane icon" class="social__icon">
         Upload Resumes by Email</h2>
         <p class="social__p">You can automatically upload multiple resumes to this job by emailing the address below</p>
         <input type="email" class="social__input" value="tomtizzy@gmail.com">

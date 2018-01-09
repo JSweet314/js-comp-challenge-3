@@ -1,0 +1,52 @@
+/*
+GRAPHS LAYOUTS (1 & 2)
+
+graphs (1)
+  graphs__display-wrapper
+    circle-graph --left
+    circle-graph
+    circle-graph --right
+  graphs__h2
+
+graphs (2)
+  graphs__img
+  graphs__h2
+
+end
+*/
+
+.graphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graphs--margin-right {
+  margin: 0 5rem 0 0;
+}
+
+.graphs__div {
+  height: 150px;
+  width: 350px;
+  background-color: blue;
+}
+
+.graphs__h2 {
+  font-size: 1rem;
+  background: #fff;
+  border: 2px solid lightgrey;
+  border-radius: 20px 20px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0 4rem 0;
+}
+
+.graphs__display-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphs__img {
+  width: 100%;
+}
