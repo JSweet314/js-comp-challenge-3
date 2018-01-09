@@ -1,0 +1,165 @@
+/*
+HEADER LAYOUT
+
+header
+  header__display-wrapper
+    div
+      header__h1
+      header__p
+        header-icon
+        header__link --blue
+    div
+      header__btn --delete
+      header__btn --edit
+      header__btn --bookmark
+      header__btn --open
+  header__link-list
+    header__list-item --selected
+      header__link --active-bold
+    header__list-item
+      header__link
+    header__list-item
+      header__link
+    header__list-item
+      header__link
+    header__list-item
+      header__link
+    header__list-item
+      header__link
+    header__list-item
+      header__link
+end
+*/
+
+.header {
+  background-color: #fff;
+  border-bottom: 2px solid lightgrey;
+}
+
+.header__display-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 5rem auto 4rem auto;
+}
+
+.header__h1 {
+  margin: 0;
+  color: #6F6F71;
+  font-size: 2rem;
+}
+
+.header__p {
+  margin: 0.2rem 0 0 0;
+  font-size: 1rem;
+}
+
+.header__icon {
+  width: 1rem;
+  vertical-align: top;
+  margin: 0 0.5rem 0 0;
+}
+
+.header__btn {
+  color: #8891a1;
+  line-height: 1;
+  float: right;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  background-size: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 1rem;
+  border: 2px solid lightgrey;
+}
+.header__btn:hover {
+  background-color: #48A3F3;
+  color: white;
+}
+
+.header__btn--bookmark {
+  background-image: url("../images/bookmark-icon.svg");
+}
+
+.header__btn--bookmark:hover {
+  background-image: url("../images/bookmark-icon-white.svg");
+}
+
+.header__btn--delete {
+  background-image: url("../images/delete-icon.svg");
+  margin-right: 0;
+}
+
+.header__btn--delete:hover {
+  background-image: url("../images/delete-icon-white.svg");
+}
+
+.header__btn--edit {
+  background-image: url("../images/edit-icon.svg");
+}
+
+.header__btn--edit:hover {
+  background-image: url("../images/edit-icon-white.svg");
+}
+
+.header__btn--open {
+  background-image: url(../images/dot-icon-green.svg);
+  background-position: 1rem;
+  border-radius: 20px;
+  width: auto;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+}
+
+.header__link-list {
+  padding: 0;
+  width: 95%;
+  margin: auto;
+}
+
+.header__list-item {
+  display: inline-block;
+  padding: 0 0rem 1rem 0;
+  margin: 0 3rem 0 0;
+  font-size: 1rem;
+}
+
+.header__list-item--selected {
+  border-bottom: 4px solid #48A3F3;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  top: 2px;
+}
+
+.header__list-item--selected:hover {
+  border-bottom: 4px solid #99C659;
+}
+
+.header__link {
+  color: #A0A3A8;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #48A3F3;
+}
+
+.header__link--active-bold {
+  font-weight: bold;
+  color: black;
+  position: relative;
+  bottom: .2rem;
+}
+
+.header__link--blue {
+  color: #48A3F3;
+}
+
+.header__link--blue:hover {
+  color: #99c659;
+}

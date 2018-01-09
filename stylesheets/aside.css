@@ -1,0 +1,224 @@
+/*
+ASIDE LAYOUT
+
+aside
+  aside-photo
+    aside-photo__img
+    aside-photo__caption
+  aside__h2
+  aside__link-list
+    aside__list-item
+      aside-link --home
+    aside__list-item
+      aside-link --jobs
+    aside__list-item
+      aside-link --resumes
+    aside__list-item
+      aside-link --tasks
+    aside__list-item
+      aside-link --calendar
+    aside__list-item
+  aside__h2
+  aside__link-list
+    aside__list-item
+      aside-link --users
+    aside__list-item
+      aside-link --location
+    aside__list-item
+      aside-link --workflows
+    aside__list-item
+      aside-link --job-boards
+    aside__list-item
+      aside-link --social
+  aside__h2
+  aside__form
+    aside__label
+      aside-checkbox --yellow
+    aside__label
+      aside-checkbox --blue
+    aside__label
+      aside-checkbox --red
+    aside__label
+      aside-checkbox --green
+end
+*/
+
+.aside {
+  display: inline-flex;
+  flex-direction: column;
+  overflow: scroll;
+  background-color: #374050;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.aside-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.aside-photo__img {
+  width: 6rem;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+}
+
+.aside-photo__caption {
+  padding: 0 2rem 0 0;
+  background-image: url("../images/down-arrow-icon.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}
+
+.aside-photo__caption:hover {
+  background-image: url("../images/down-arrow-icon-white.svg");
+  color: #fff;
+}
+
+.aside__h2 {
+  border-top: 2px solid #303848;
+  font-size: 1rem;
+  color: #5D667A;
+  padding: 2rem 0 0 1rem;
+}
+
+.aside__link-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aside__link {
+  color: #A0A3A8;
+  text-decoration: none;
+  padding: 1rem 1.5rem 1rem 2.5rem;
+  background-size: 1rem;
+  background-position: 1rem 1rem;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.aside__link:hover {
+  color: white;
+  background-color: #303848;
+  border-left: 1px solid #48A3F3;
+  padding-left: 2.4rem;
+  background-position: 0.9rem 1rem;
+}
+
+.aside__link--calendar {
+  background-image: url("../images/calendar-icon.svg");
+}
+
+.aside__link--calendar:hover {
+  background-image: url("../images/calendar-icon-white.svg");
+}
+
+.aside__link--home {
+  background-image: url("../images/home-icon.svg");
+}
+
+.aside__link--home:hover {
+  background-image: url("../images/home-icon-white.svg");
+}
+
+.aside__link--job-boards {
+  background-image: url("../images/job-boards-icon.svg");
+}
+
+.aside__link--job-boards:hover {
+  background-image: url("../images/job-boards-icon-white.svg");
+}
+
+.aside__link--jobs {
+  background-image: url("../images/briefcase-icon.svg");
+}
+
+.aside__link--jobs:hover {
+  background-image: url("../images/briefcase-icon-white.svg");
+}
+
+.aside__link--location {
+  background-image: url("../images/location-icon.svg");
+}
+
+.aside__link--location:hover {
+  background-image: url("../images/location-icon-white.svg");
+}
+
+.aside__link--resumes {
+  background-image: url("../images/resume-icon.svg");
+}
+
+.aside__link--resumes:hover {
+  background-image: url("../images/resume-icon-white.svg");
+}
+
+.aside__link--social {
+  background-image: url("../images/social-icon.svg");
+}
+
+.aside__link--social:hover {
+  background-image: url("../images/social-icon-white.svg");
+}
+
+.aside__link--tasks {
+  background-image: url("../images/tasks-icon.svg");
+}
+
+.aside__link--tasks:hover {
+  background-image: url("../images/tasks-icon-white.svg");
+}
+
+.aside__link--users {
+  background-image: url("../images/users-icon.svg");
+}
+
+.aside__link--users:hover {
+  background-image: url("../images/users-icon-white.svg");
+}
+
+.aside__link--workflows {
+  background-image: url("../images/workflows-icon.svg");
+}
+
+.aside__link--workflows:hover {
+  background-image: url("../images/workflows-icon-white.svg");
+}
+
+.aside__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__label {
+  padding: 1rem 1.5rem 1rem 1rem;
+}
+
+.aside__label:hover {
+  background-color: #303848;
+  color: #fff;
+}
+
+.aside-checkbox {
+  margin: 0 0.5rem 0 0;
+  width: 1rem;
+  vertical-align: middle;
+}
+
+.aside-checkbox--blue {
+}
+
+.aside-checkbox--green {
+}
+
+.aside-checkbox--red {
+}
+
+.aside-checkbox--yellow {
+}
