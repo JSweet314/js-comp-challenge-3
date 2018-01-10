@@ -34,7 +34,7 @@ end
   color: #fff;
   padding: 1rem;
   font-size: 1.2rem;
-  border-radius: 5px;
+  border-radius: 2px;
   background-position: 2rem;
   background-repeat: no-repeat;
   background-size: 1.2rem;
@@ -65,6 +65,9 @@ end
 .social__btn--copy {
   background-color: #66B9BE;
   margin: 0;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0 2px 2px 0;
 }
 
 .social__display-wrapper {
@@ -103,4 +106,5 @@ end
   font-size: 1rem;
   flex: auto;
   border: none;
+  border-radius: 5px 0 0 5px;
 }

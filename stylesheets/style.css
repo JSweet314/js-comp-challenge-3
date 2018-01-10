@@ -74,10 +74,12 @@ body {
 }
 
 .divider {
-  display: flex;
+  width: 95%;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem 3rem 1.5rem;
+  padding: 1rem 0 3rem 0;
+  align-self: center;
 }
 
 .divider__line {
@@ -106,6 +108,20 @@ body {
   background-image: url("../images/up-arrow-icon-white.svg");
   background-color: #48A3F3;
   border-color: #99C659;
+}
+
+@media screen and (max-width: 400px) {
+  .aside,
+  .nav,
+  .header,
+  .main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .aside {
+    grid-row-start: 2;
+  }
 }
 
 /*START OF MEDIA QUERIES*/
