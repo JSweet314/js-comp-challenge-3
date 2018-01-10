@@ -76,7 +76,7 @@ end
   border-radius: 100%;
   vertical-align: middle;
   width: 3rem;
-  margin: 0 1rem 0 0;
+  margin: 0.5rem 1rem 0.5rem 0;
 }
 
 .info-table--heading {

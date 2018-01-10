@@ -22,6 +22,7 @@ end
   background-size: 1.5rem;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 6rem;
   min-width: 6rem;
 }
 
@@ -74,4 +75,8 @@ end
 
 .nav__search::placeholder {
   color: lightgrey;
+}
+
+@media screen and (max-width: 500px) {
+
 }
