@@ -55,7 +55,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 95%;
-  margin: auto;
+  margin: 3rem auto 0 auto;
 }
 
 /*MAIN BLOCK WRAPPER BENEATH HEADER, SPLIT INTO FEATURE AND .MAIN__BOTTOM*/
