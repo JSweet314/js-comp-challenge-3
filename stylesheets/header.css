@@ -37,45 +37,45 @@ end
 }
 
 .header__display-wrapper {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   justify-content: space-between;
-  width: 95%;
   margin: 5rem auto 4rem auto;
+  width: 95%;
 }
 
 .header__h1 {
-  margin: 0;
   color: #6F6F71;
   font-size: 2rem;
+  margin: 0;
 }
 
 .header__p {
-  margin: 0.2rem 0 0 0;
   font-size: 1rem;
+  margin: 0.2rem 0 0 0;
 }
 
 .header__icon {
-  width: 1rem;
-  vertical-align: top;
   margin: 0 0.5rem 0 0;
+  vertical-align: top;
+  width: 1rem;
 }
 
 .header__btn {
-  color: #8891a1;
-  line-height: 1;
-  float: right;
-  border-radius: 100%;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 1rem;
-  font-weight: bold;
-  background-size: 1rem;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 1rem;
+  border-radius: 100%;
+  border: 2px solid lightgrey;
+  color: #8891a1;
+  float: right;
   font-size: 1rem;
-  border: 2px solid lightgrey;;
+  font-weight: bold;
+  height: 2.5rem;
+  line-height: 1;
+  margin: 1rem;
+  width: 2.5rem;
 }
 .header__btn:hover {
   background-color: #48A3F3;
@@ -111,29 +111,29 @@ end
   background-image: url(../images/dot-icon-green.svg);
   background-position: 1rem 50%;
   border-radius: 2rem;
-  width: auto;
+  display: grid;
   height: 2.5rem;
   padding: 0.6rem 1rem 0.6rem 2.5rem;
-  display: grid;
+  width: auto;
 }
 
 .header__link-list {
+  margin: auto;
   padding: 0;
   width: 95%;
-  margin: auto;
 }
 
 .header__list-item {
   display: inline-block;
-  padding: 0 0rem 1rem 0;
-  margin: 0 3rem 0 0;
   font-size: 1rem;
+  margin: 0 3rem 0 0;
+  padding: 0 0rem 1rem 0;
 }
 
 .header__list-item--selected {
   border-bottom: 4px solid #48A3F3;
-  font-weight: bold;
   color: black;
+  font-weight: bold;
   position: relative;
   top: 2px;
 }
@@ -152,10 +152,10 @@ end
 }
 
 .header__link--active-bold {
-  font-weight: bold;
-  color: black;
-  position: relative;
   bottom: .2rem;
+  color: black;
+  font-weight: bold;
+  position: relative;
 }
 
 .header__link--blue {

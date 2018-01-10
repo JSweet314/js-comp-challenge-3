@@ -11,17 +11,17 @@ end
 */
 
 .nav {
-  display: flex;
   border-bottom: 1px solid lightgrey;
+  display: flex;
 }
 
 .nav__btn {
-  flex: auto;
-  border: none;
-  border-right: 1px solid lightgrey;
-  background-size: 1.5rem;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  border-right: 1px solid lightgrey;
+  border: none;
+  flex: auto;
   min-height: 6rem;
   min-width: 6rem;
 }
@@ -63,20 +63,16 @@ end
 }
 
 .nav__search {
-  height: 6rem;
-  border: none;
-  border-right: 1px solid lightgrey;
-  width: 80%;
-  background: url("../images/search-icon.svg") 1rem no-repeat;
   background-size: 1rem 1rem;
-  padding: 0 0 0 3.5rem;
+  background: url("../images/search-icon.svg") 1rem no-repeat;
+  border-right: 1px solid lightgrey;
+  border: none;
   font-size: 1.5rem;
+  height: 6rem;
+  padding: 0 0 0 3.5rem;
+  width: 80%;
 }
 
 .nav__search::placeholder {
   color: lightgrey;
-}
-
-@media screen and (max-width: 500px) {
-
 }
