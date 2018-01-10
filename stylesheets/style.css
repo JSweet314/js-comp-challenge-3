@@ -216,6 +216,27 @@ body {
 
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 20px;
+  }
+
+  .feature,
+  .main__bottom,
+  .divider,
+  .header__display-wrapper,
+  .header__link-list {
+    width: 80%;
   }
 }
