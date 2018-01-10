@@ -185,8 +185,12 @@ body {
     text-align: center;
   }
 
-  .nav__input {
+  .nav__search {
+    border: none;
     border-bottom: 0.2rem solid lightgrey;
+  }
+
+  .nav__btn {
   }
 
   .graphs--margin-right {
@@ -223,12 +227,28 @@ body {
   html {
     font-size: 14px;
   }
+
+  .circle-graph__text--number {
+  transform: translateY(-3px);
+  }
+
+  .circle-graph__text--label {
+    transform: translateY(3px);
+  }
 }
 
 
 @media screen and (min-width: 2000px) {
   html {
-    font-size: 20px;
+    font-size: 22px;
+  }
+
+  .circle-graph__text--number {
+  transform: translateY(-6px);
+  }
+
+  .circle-graph__text--label {
+    transform: translateY(-1px);
   }
 
   .feature,
