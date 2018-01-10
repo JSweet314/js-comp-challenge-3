@@ -11,9 +11,9 @@ end
 */
 
 .circle-graph {
+  height: 50%;
   margin: 0 1rem;
   width: 50%;
-  height: 50%;
 }
 
 .circle-graph--left {
@@ -21,11 +21,11 @@ end
 }
 
 .circle-graph--right {
- margin: 0 0 0 1rem;
+  margin: 0 0 0 1rem;
 }
 
 .circle-graph__segment {
-stroke-linecap: round;
+  stroke-linecap: round;
 }
 
 .circle-graph__text-group {

@@ -16,10 +16,10 @@ end
 */
 
 .graphs {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .graphs--margin-right {
@@ -27,24 +27,24 @@ end
 }
 
 .graphs__div {
+  background-color: blue;
   height: 150px;
   width: 350px;
-  background-color: blue;
 }
 
 .graphs__h2 {
-  font-size: 1rem;
   background: #fff;
-  border: 2px solid lightgrey;
   border-radius: 20px 20px;
-  padding: 1rem 1.5rem;
+  border: 2px solid lightgrey;
+  font-size: 1rem;
   margin: 1rem 0 2rem 0;
+  padding: 1rem 1.5rem;
 }
 
 .graphs__display-wrapper {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .graphs__img {

@@ -44,37 +44,37 @@ end
 */
 
 .aside {
+  background-color: #374050;
   display: inline-flex;
   flex-direction: column;
-  overflow: scroll;
-  background-color: #374050;
-  height: 100%;
   font-size: 1rem;
+  height: 100%;
   min-width: 122px;
+  overflow: scroll;
   padding-bottom: 0.5rem;
 }
 
 .aside__photo {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 2rem 0 1rem 0;
 }
 
 .aside__photo__img {
-  width: 6rem;
   border-radius: 100%;
-  vertical-align: middle;
   margin: 0 0 1rem 0;
+  vertical-align: middle;
+  width: 6rem;
 }
 
 .aside__photo__caption {
-  padding: 0 1rem 0 0;
   background-image: url("../images/down-arrow-icon.svg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 0.5rem;
+  padding: 0 1rem 0 0;
 }
 
 .aside__photo__caption:hover {
@@ -84,33 +84,33 @@ end
 
 .aside__h2 {
   border-top: 2px solid #303848;
-  font-size: 1rem;
   color: #5D667A;
+  font-size: 1rem;
   padding: 2rem 0 0 1rem;
 }
 
 .aside__link-list {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .aside__link {
-  color: #A0A3A8;
-  text-decoration: none;
-  padding: 1rem 1.5rem 1rem 2.5rem;
-  background-size: 1rem;
   background-position: 1rem 1rem;
   background-repeat: no-repeat;
+  background-size: 1rem;
+  color: #A0A3A8;
   display: block;
+  padding: 1rem 1.5rem 1rem 2.5rem;
+  text-decoration: none;
 }
 
 .aside__link:hover {
-  color: white;
   background-color: #303848;
-  border-left: 1px solid #48A3F3;
-  padding-left: 2.4rem;
   background-position: 0.9rem 1rem;
+  border-left: 1px solid #48A3F3;
+  color: white;
+  padding-left: 2.4rem;
 }
 
 .aside__link--calendar {
@@ -199,8 +199,8 @@ end
 }
 
 .aside__label {
-  padding: 1rem 2.5rem 1rem 1rem;
   display: flex;
+  padding: 1rem 2.5rem 1rem 1rem;
 }
 
 .aside__label:hover {
@@ -223,9 +223,9 @@ end
 }
 
 .aside__checkbox {
+  height: 1rem;
   margin: 0 0.5rem 0 0;
   width: 1rem;
-  height: 1rem;
 }
 
 .aside__checkbox--yellow {
@@ -246,11 +246,7 @@ end
 
 .aside__checkbox--checked {
   background-image: url('../images/checkmark-black.svg');
-  background-size: 0.7rem;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 500px) {
-
+  background-size: 0.7rem;
 }

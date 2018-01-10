@@ -28,19 +28,19 @@ end
 */
 
 .info-table {
+  background-color: #fff;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr auto 1fr 1fr;
   width: 65%;
-  background-color: #fff;
 }
 
 .info-table__btn {
   background-color: #8891a1;
-  border: none;
   border-radius: 5px;
-  padding: 0.5rem;
+  border: none;
   color: #fff;
+  padding: 0.5rem;
 }
 
 .info-table__btn:hover {
@@ -50,10 +50,10 @@ end
 .info-table__photo,
 .info-table__description,
 .info-table__title {
-  font-size: 1rem;
-  display: flex;
   align-items: center;
   border-top: 1px solid lightgrey;
+  display: flex;
+  font-size: 1rem;
   padding: 0 2rem 0 0;
 }
 
@@ -67,16 +67,16 @@ end
 }
 
 .info-table__icon {
-  width: 1rem;
-  vertical-align: top;
   margin: 0 0.5rem 0 0;
+  vertical-align: top;
+  width: 1rem;
 }
 
 .info-table__img {
   border-radius: 100%;
+  margin: 0.5rem 1rem 0.5rem 0;
   vertical-align: middle;
   width: 3rem;
-  margin: 0.5rem 1rem 0.5rem 0;
 }
 
 .info-table--heading {

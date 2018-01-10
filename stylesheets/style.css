@@ -14,11 +14,6 @@ main
 end
 */
 
-/*
-IDIOMATIC CSS
-.selector {Positioning; Display & Box Model; Other};
-*/
-
 @import "normalize.css";
 @import "aside.css";
 @import "nav.css";
@@ -29,24 +24,24 @@ IDIOMATIC CSS
 @import "social.css";
 
 html {
-  font-size: 10px;
-  font-family: sans-serif;
   color: #A0A3A8;
+  font-family: sans-serif;
+  font-size: 10px;
   height: 100%;
 }
 
 body {
   display: grid;
+  font-size: 1rem;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
-  font-size: 1rem;
   height: 100%;
   min-width: 320px;
 }
 
 .aside {
-  grid-row-start: 1;
   grid-row-end: 4;
+  grid-row-start: 1;
 }
 
 /*FEATURE SECTION, CURRENTLY CONTAINING GRAPHS*/
@@ -54,8 +49,8 @@ body {
 .feature {
   display: flex;
   justify-content: space-between;
-  width: 95%;
   margin: 3rem auto 0 auto;
+  width: 95%;
 }
 
 /*MAIN BLOCK WRAPPER BENEATH HEADER, SPLIT INTO FEATURE AND .MAIN__BOTTOM*/
@@ -67,26 +62,26 @@ body {
 
 .main__bottom {
   display: flex;
+  grid-column-start: 2;
+  justify-content: space-between;
   margin: 0 auto 2rem auto;
   width: 95%;
-  justify-content: space-between;
-  grid-column-start: 2;
 }
 
 .divider {
-  width: 95%;
+  align-items: center;
+  align-self: center;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
   padding: 1rem 0 3rem 0;
-  align-self: center;
+  width: 95%;
 }
 
 .divider__line {
-  width: 100%;
-  margin: 0 0.5rem 0 0;
-  border: none;
   border-top: 1px solid lightgrey;
+  border: none;
+  margin: 0 0.5rem 0 0;
+  width: 100%;
 }
 
 .divider__line--right {
@@ -94,19 +89,19 @@ body {
 }
 
 .divider__button {
-  border: 2px solid lightgrey;
   background-color: #fff;
-  border-radius: 100%;
   background-image: url("../images/up-arrow-icon.svg");
   background-position: 50% 49%;
-  background-size: .9rem;
   background-repeat: no-repeat;
+  background-size: .9rem;
+  border-radius: 100%;
+  border: 2px solid lightgrey;
   padding: 1rem;
 }
 
 .divider__button:hover {
-  background-image: url("../images/up-arrow-icon-white.svg");
   background-color: #48A3F3;
+  background-image: url("../images/up-arrow-icon-white.svg");
   border-color: #99C659;
 }
 
@@ -115,8 +110,8 @@ body {
   .nav,
   .header,
   .main {
-    grid-column-start: 1;
     grid-column-end: 2;
+    grid-column-start: 1;
   }
 
   .aside {
@@ -132,8 +127,8 @@ body {
   }
 
   .aside__photo {
-    grid-column-start: 1;
     grid-column-end: 4;
+    grid-column-start: 1;
   }
 
   .aside__form,
@@ -143,9 +138,9 @@ body {
 
   .aside__h2 {
     background-image: url('../images/down-arrow-icon.svg');
-    background-size: 1.5rem;
     background-position: 2% 2rem;
     background-repeat: no-repeat;
+    background-size: 1.5rem;
     font-size: 1.5rem;
     padding-left: 3rem;
   }
@@ -170,15 +165,15 @@ body {
   }
 
   .header__list-item {
-    text-align: center;
     margin: 0;
     padding: 1rem 0;
+    text-align: center;
   }
 
   .header__list-item--selected {
-    grid-row-start: 3;
-    grid-column-start: 2;
     grid-column-end: 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
   }
 
   .header__h1 {
@@ -195,8 +190,8 @@ body {
   }
 
   .info-table {
-    width: 100%;
     margin-bottom: 2rem;
+    width: 100%;
   }
 
   .social {
