@@ -32,14 +32,14 @@ aside
       aside-link --social
   aside__h2
   aside__form
-    aside__label
-      aside-checkbox --yellow
-    aside__label
-      aside-checkbox --blue
-    aside__label
-      aside-checkbox --red
-    aside__label
-      aside-checkbox --green
+    aside__label --yellow
+      aside__checkbox --yellow
+    aside__label --blue
+      aside__checkbox --blue
+    aside__label --red
+      aside__checkbox --red
+    aside__label --green
+      aside__checkbox --green
 end
 */
 
@@ -199,27 +199,53 @@ end
 
 .aside__label {
   padding: 1rem 2.5rem 1rem 1rem;
+  display: flex;
 }
 
 .aside__label:hover {
   background-color: #303848;
   color: #fff;
+  padding-left: 0.9rem;
 }
 
-.aside-checkbox {
+.aside__label--yellow:hover {
+  border-left: 1px solid #F9D649;
+}
+.aside__label--blue:hover {
+  border-left: 1px solid #51ACF6;
+}
+.aside__label--red:hover {
+  border-left: 1px solid #D43661;
+}
+.aside__label--green:hover {
+  border-left: 1px solid #4BA98A;
+}
+
+.aside__checkbox {
   margin: 0 0.5rem 0 0;
   width: 1rem;
-  vertical-align: middle;
+  height: 1rem;
 }
 
-.aside-checkbox--blue {
+.aside__checkbox--yellow {
+  background-color: #F9D649;
 }
 
-.aside-checkbox--green {
+.aside__checkbox--blue {
+  background-color: #51ACF6;
 }
 
-.aside-checkbox--red {
+.aside__checkbox--red {
+  background-color: #D43661;
 }
 
-.aside-checkbox--yellow {
+.aside__checkbox--green {
+  background-color: #4BA98A;
+}
+
+.aside__checkbox--checked {
+  background-image: url('../images/checkmark-black.svg');
+  background-size: 0.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
