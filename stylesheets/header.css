@@ -108,11 +108,11 @@ end
 
 .header__btn--open {
   background-image: url(../images/dot-icon-green.svg);
-  background-position: 1rem 50%;
+  background-position: 1rem;
   border-radius: 2rem;
   display: grid;
   height: 2.5rem;
-  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  padding: 0 1rem 0 2.5rem;
   width: auto;
 }
 
