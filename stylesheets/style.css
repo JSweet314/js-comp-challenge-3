@@ -78,8 +78,8 @@ body {
 }
 
 .divider__line {
-  border-top: 1px solid lightgrey;
   border: none;
+  border-top: 0.2rem solid lightgrey;
   margin: 0 0.5rem 0 0;
   width: 100%;
 }
@@ -95,7 +95,7 @@ body {
   background-repeat: no-repeat;
   background-size: .9rem;
   border-radius: 100%;
-  border: 2px solid lightgrey;
+  border: 0.2rem solid lightgrey;
   padding: 1rem;
 }
 

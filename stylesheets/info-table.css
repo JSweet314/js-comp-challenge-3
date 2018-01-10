@@ -37,7 +37,7 @@ end
 
 .info-table__btn {
   background-color: #8891a1;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border: none;
   color: #fff;
   padding: 0.5rem;
@@ -51,7 +51,7 @@ end
 .info-table__description,
 .info-table__title {
   align-items: center;
-  border-top: 1px solid lightgrey;
+  border-top: 0.1rem solid lightgrey;
   display: flex;
   font-size: 1rem;
   padding: 0 2rem 0 0;

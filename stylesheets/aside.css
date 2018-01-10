@@ -83,7 +83,7 @@ end
 }
 
 .aside__h2 {
-  border-top: 2px solid #303848;
+  border-top: 0.2rem solid #303848;
   color: #5D667A;
   font-size: 1rem;
   padding: 2rem 0 0 1rem;
@@ -108,7 +108,7 @@ end
 .aside__link:hover {
   background-color: #303848;
   background-position: 0.9rem 1rem;
-  border-left: 1px solid #48A3F3;
+  border-left: 0.1rem solid #48A3F3;
   color: white;
   padding-left: 2.4rem;
 }
@@ -210,16 +210,16 @@ end
 }
 
 .aside__label--yellow:hover {
-  border-left: 1px solid #F9D649;
+  border-left: 0.1rem solid #F9D649;
 }
 .aside__label--blue:hover {
-  border-left: 1px solid #51ACF6;
+  border-left: 0.1rem solid #51ACF6;
 }
 .aside__label--red:hover {
-  border-left: 1px solid #D43661;
+  border-left: 0.1rem solid #D43661;
 }
 .aside__label--green:hover {
-  border-left: 1px solid #4BA98A;
+  border-left: 0.1rem solid #4BA98A;
 }
 
 .aside__checkbox {
