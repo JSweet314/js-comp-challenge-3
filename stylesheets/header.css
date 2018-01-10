@@ -33,7 +33,7 @@ end
 
 .header {
   background-color: #fff;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 0.2rem solid lightgrey;
 }
 
 .header__display-wrapper {
@@ -67,7 +67,7 @@ end
   background-repeat: no-repeat;
   background-size: 1rem;
   border-radius: 100%;
-  border: 2px solid lightgrey;
+  border: 0.2rem solid lightgrey;
   color: #8891a1;
   float: right;
   font-size: 1rem;
@@ -131,15 +131,15 @@ end
 }
 
 .header__list-item--selected {
-  border-bottom: 4px solid #48A3F3;
+  border-bottom: 0.4rem solid #48A3F3;
   color: black;
   font-weight: bold;
   position: relative;
-  top: 2px;
+  top: 0.2rem;
 }
 
 .header__list-item--selected:hover {
-  border-bottom: 4px solid #99C659;
+  border-bottom: 0.4rem solid #99C659;
 }
 
 .header__link {
