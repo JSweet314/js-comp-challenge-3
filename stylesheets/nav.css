@@ -19,8 +19,8 @@ end
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
-  border-right: 0.1rem solid lightgrey;
   border: none;
+  border-right: 0.1rem solid lightgrey;
   flex: auto;
   min-height: 6rem;
   min-width: 6rem;
@@ -65,8 +65,8 @@ end
 .nav__search {
   background: url("../images/search-icon.svg") 1rem no-repeat;
   background-size: 1.5rem 1.5rem;
-  border-right: 0.1rem solid lightgrey;
   border: none;
+  border-right: 0.1rem solid lightgrey;
   font-size: 1.5rem;
   height: 6rem;
   padding: 0 0 0 3.5rem;
