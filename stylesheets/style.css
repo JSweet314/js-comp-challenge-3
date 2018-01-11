@@ -39,6 +39,10 @@ body {
   min-width: 320px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .aside {
   grid-row-end: 4;
   grid-row-start: 1;
@@ -102,7 +106,6 @@ body {
 .divider__button:hover {
   background-color: #48A3F3;
   background-image: url("../images/up-arrow-icon-white.svg");
-  border-color: #99C659;
 }
 
 @media screen and (max-width: 675px) {
