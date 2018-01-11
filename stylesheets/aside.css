@@ -225,31 +225,35 @@ end
 }
 
 .aside__checkbox {
+  display: none;
+}
+
+.aside__checkbox:checked + .aside__label .checkbox__div {
+  background-image: url('../images/checkmark-black.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.7rem;
+}
+
+.checkbox__div {
   height: 1rem;
   margin: 0 0.5rem 0 0;
   width: 1rem;
   cursor: pointer;
 }
 
-.aside__checkbox--yellow {
+.checkbox__div--yellow {
   background-color: #F9D649;
 }
 
-.aside__checkbox--blue {
+.checkbox__div--blue {
   background-color: #51ACF6;
 }
 
-.aside__checkbox--red {
+.checkbox__div--red {
   background-color: #D43661;
 }
 
-.aside__checkbox--green {
+.checkbox__div--green {
   background-color: #4BA98A;
-}
-
-.aside__checkbox--checked {
-  background-image: url('../images/checkmark-black.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 0.7rem;
 }
