@@ -107,7 +107,7 @@ main {
   }
   .side-bar {
     grid-row-start: 2;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 2rem;
@@ -132,7 +132,8 @@ main {
     font-size: 1.5rem;
     padding: 0 0 0 2rem;
     border: none;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+    min-width: 25%;
   }
 
   .search-bar {
@@ -206,8 +207,10 @@ main {
     font-size: 9px;
   }
 
-  .overview__list-item {
-    margin: 0 2rem 0 0;
+  @media screen and (min-width: 675px) {
+    .overview__list-item {
+      margin: 0 2rem 0 0;
+    }
   }
 }
 
