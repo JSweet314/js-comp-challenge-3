@@ -6,93 +6,93 @@
   <title>Static Comp 3</title>
 </head>
   <body>
-    <nav class="nav" id="nav">
-      <button class="nav__btn nav__btn--side-menu" aria-label="view side menu"></button>
-      <input type="search" class="nav__search" placeholder="Search for a job, task, or resume" aria-label="search bar">
-      <button class="nav__btn nav__btn--add-contact" aria-label="view contacts"></button>
-      <button class="nav__btn nav__btn--schedule" aria-label="view calendar"></button>
-      <button class="nav__btn nav__btn--dots-menu" aria-label="view main menu"></button>
+    <nav class="search-bar" id="search-bar">
+      <button class="search-bar__btn search-bar__btn--side-menu" aria-label="view side menu"></button>
+      <input type="search" class="search-bar__search" placeholder="Search for a job, task, or resume" aria-label="search bar">
+      <button class="search-bar__btn search-bar__btn--add-contact" aria-label="view contacts"></button>
+      <button class="search-bar__btn search-bar__btn--schedule" aria-label="view calendar"></button>
+      <button class="search-bar__btn search-bar__btn--dots-menu" aria-label="view main menu"></button>
     </nav>
-    <aside class="aside">
-      <figure class="aside__photo">
-        <img class="aside__photo__img" src="images/yogi-headshot.jpeg" alt="User headshot">
-        <figcaption class="aside__photo__caption">Newton Barley</figcaption>
+    <aside class="side-bar">
+      <figure class="side-bar__photo">
+        <img class="side-bar__photo__img" src="images/yogi-headshot.jpeg" alt="User headshot">
+        <figcaption class="side-bar__photo__caption">Newton Barley</figcaption>
       </figure>
-      <h2 class="aside__h2">Main</h2>
-      <ul class="aside__link-list">
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--home" href="">HOME</a>
+      <h2 class="side-bar__h2">Main</h2>
+      <ul class="side-bar__link-list">
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--home" href="">HOME</a>
         </li>
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--jobs" href="">JOBS</a>
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--jobs" href="">JOBS</a>
         </li>
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--resumes" href="">RESUMES</a>
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--resumes" href="">RESUMES</a>
         </li>
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--tasks" href="">TASKS</a>
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--tasks" href="">TASKS</a>
         </li>
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--calendar" href="">CALENDAR</a>
-        </li>
-      </ul>
-      <h2 class="aside__h2">Admin</h2>
-      <ul class="aside__link-list">
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--users" href="">USERS</a>
-        </li>
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--location" href="">LOCATION</a>
-        </li>
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--workflows" href="">WORKFLOWS</a>
-        </li>
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--job-boards" href="">JOB BOARDS</a>
-        </li>
-        <li class="aside__list-item">
-          <a class="aside__link aside__link--social" href="">SOCIAL</a>
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--calendar" href="">CALENDAR</a>
         </li>
       </ul>
-      <h2 class="aside__h2">Categories</h2>
-      <form action="" class="aside__form">
-        <input type="checkbox" class="aside__checkbox" id="yellow-checkbox">
-        <label class="aside__label aside__label--yellow" for="yellow-checkbox"><div class="checkbox__div checkbox__div--yellow"></div>Administrative</label>
-        <input type="checkbox" class="aside__checkbox" id="blue-checkbox">
-        <label class="aside__label aside__label--blue" for="blue-checkbox"><div class="checkbox__div checkbox__div--blue"></div>Design</label>
-        <input type="checkbox" class="aside__checkbox" id="red-checkbox">
-        <label class="aside__label aside__label--red" for="red-checkbox"><div class="checkbox__div checkbox__div--red"></div>Executive</label>
-        <input type="checkbox" class="aside__checkbox" id="green-checkbox">
-        <label class="aside__label aside__label--green" for="green-checkbox"><div class="checkbox__div checkbox__div--green"></div>Human Resources</label>
+      <h2 class="side-bar__h2">Admin</h2>
+      <ul class="side-bar__link-list">
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--users" href="">USERS</a>
+        </li>
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--location" href="">LOCATION</a>
+        </li>
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--workflows" href="">WORKFLOWS</a>
+        </li>
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--job-boards" href="">JOB BOARDS</a>
+        </li>
+        <li class="side-bar__list-item">
+          <a class="side-bar__link side-bar__link--social" href="">SOCIAL</a>
+        </li>
+      </ul>
+      <h2 class="side-bar__h2">Categories</h2>
+      <form action="" class="side-bar__form">
+        <input type="checkbox" class="side-bar__checkbox" id="yellow-checkbox">
+        <label class="side-bar__label side-bar__label--yellow" for="yellow-checkbox"><div class="checkbox__div checkbox__div--yellow"></div>Administrative</label>
+        <input type="checkbox" class="side-bar__checkbox" id="blue-checkbox">
+        <label class="side-bar__label side-bar__label--blue" for="blue-checkbox"><div class="checkbox__div checkbox__div--blue"></div>Design</label>
+        <input type="checkbox" class="side-bar__checkbox" id="red-checkbox">
+        <label class="side-bar__label side-bar__label--red" for="red-checkbox"><div class="checkbox__div checkbox__div--red"></div>Executive</label>
+        <input type="checkbox" class="side-bar__checkbox" id="green-checkbox">
+        <label class="side-bar__label side-bar__label--green" for="green-checkbox"><div class="checkbox__div checkbox__div--green"></div>Human Resources</label>
       </form>
     </aside>
-    <header class="header">
-      <div class="header__display-wrapper">
+    <header class="overview">
+      <div class="overview__display-wrapper">
         <div>
-          <h1 class="header__h1">Customer Service Representative</h1>
-          <p class="header__p">
-            <img src="images/location-icon.svg" alt="location icon" class="header__icon">
-            San Francisco, CA ∙ <a href="" class="header__link header__link--blue">Preview this post</a>
+          <h1 class="overview__h1">Customer Service Representative</h1>
+          <p class="overview__p">
+            <img src="images/location-icon.svg" alt="location icon" class="overview__icon">
+            San Francisco, CA ∙ <a href="" class="overview__link overview__link--blue">Preview this post</a>
           </p>
         </div>
         <div>
-          <button class="header__btn header__btn--delete"></button>
-          <button class="header__btn header__btn--edit"></button>
-          <button class="header__btn header__btn--bookmark"></button>
-          <button class="header__btn header__btn--open">OPEN</button>
+          <button class="overview__btn overview__btn--delete"></button>
+          <button class="overview__btn overview__btn--edit"></button>
+          <button class="overview__btn overview__btn--bookmark"></button>
+          <button class="overview__btn overview__btn--open">OPEN</button>
         </div>
       </div>
-      <ul class="header__link-list">
-        <li class="header__list-item header__list-item--selected"><a href="" class="header__link header__link--active-bold">SUMMARY</a></li>
-        <li class="header__list-item"><a href="" class="header__link">APPLICANTS</a></li>
-        <li class="header__list-item"><a href="" class="header__link">JOB BOARD</a></li>
-        <li class="header__list-item"><a href="" class="header__link">INTERVIEWS</a></li>
-        <li class="header__list-item"><a href="" class="header__link">ACTIVITY</a></li>
-        <li class="header__list-item"><a href="" class="header__link">BROADCAST</a></li>
-        <li class="header__list-item"><a href="" class="header__link">NOTIFICATIONS</a></li>
+      <ul class="overview__link-list">
+        <li class="overview__list-item overview__list-item--selected"><a href="" class="overview__link overview__link--active-bold">SUMMARY</a></li>
+        <li class="overview__list-item"><a href="" class="overview__link">APPLICANTS</a></li>
+        <li class="overview__list-item"><a href="" class="overview__link">JOB BOARD</a></li>
+        <li class="overview__list-item"><a href="" class="overview__link">INTERVIEWS</a></li>
+        <li class="overview__list-item"><a href="" class="overview__link">ACTIVITY</a></li>
+        <li class="overview__list-item"><a href="" class="overview__link">BROADCAST</a></li>
+        <li class="overview__list-item"><a href="" class="overview__link">NOTIFICATIONS</a></li>
       </ul>
     </header>
-    <main class="main">
+    <main>
       <div class="feature">
         <section class="graphs graphs--margin-right">
           <div class="graphs__display-wrapper">
@@ -129,7 +129,7 @@
         </section>
       </div>
       <div class="divider"><hr class="divider__line"><button class="divider__button" aria-label="Toggle bottom display"></button><hr class="divider__line divider__line--right"></div>
-      <div class="main__bottom">
+      <div class="sub-content">
         <section class="info-table">
           <h2 class="info-table__title info-table--heading info-table__heading--pad-left">JOB DESCRIPTION</h2>
           <p class="info-table__description info-table--heading"><button class="info-table__btn"><img src="images/edit-icon-white.svg" alt="Edit button" class="info-table__icon">EDIT</button></p>
