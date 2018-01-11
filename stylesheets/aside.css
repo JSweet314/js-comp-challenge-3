@@ -75,6 +75,7 @@ end
   background-repeat: no-repeat;
   background-size: 0.5rem;
   padding: 0 1rem 0 0;
+  cursor: pointer;
 }
 
 .aside__photo__caption:hover {
@@ -201,6 +202,7 @@ end
 .aside__label {
   display: flex;
   padding: 1rem 2.5rem 1rem 1rem;
+  cursor: pointer;
 }
 
 .aside__label:hover {
@@ -226,6 +228,7 @@ end
   height: 1rem;
   margin: 0 0.5rem 0 0;
   width: 1rem;
+  cursor: pointer;
 }
 
 .aside__checkbox--yellow {
