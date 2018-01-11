@@ -107,13 +107,17 @@ main {
   }
   .side-bar {
     grid-row-start: 2;
-    justify-content: center;
-    padding-bottom: 1rem;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 2rem;
   }
 
   .side-bar__photo {
-    grid-column-end: 4;
-    grid-column-start: 1;
+    width: 100%;
+    border-bottom: 0.2rem solid #303848;
+    margin: 0;
+    padding: 1rem;
   }
 
   .side-bar__form,
@@ -123,24 +127,33 @@ main {
 
   .side-bar__h2 {
     background-image: url('../images/down-arrow-icon.svg');
-    background-position: 2% 2rem;
     background-repeat: no-repeat;
     background-size: 1.5rem;
     font-size: 1.5rem;
-    padding-left: 3rem;
+    padding: 0 0 0 2rem;
+    border: none;
+    margin: 1.5rem 0;
   }
 
   .search-bar {
     flex-wrap: wrap;
+    border-bottom: 2px solid lightgrey;
   }
 
   .search-bar__search {
     order: -1;
     width: 100%;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+  }
+
+  .overview {
+    justify-content: space-evenly;
   }
 
   .overview__display-wrapper {
     flex-direction: column;
+    margin: 2rem auto 0 auto;
   }
 
   .overview__link-list {
@@ -170,13 +183,8 @@ main {
     text-align: center;
   }
 
-  .search-bar {
-    border-bottom: 2px solid lightgrey;
-  }
-
-  .search-bar__search {
-    border: none;
-    border-bottom: 2px solid lightgrey;
+  .overview__btn {
+    margin: 2rem;
   }
 
   .graphs--margin-right {
