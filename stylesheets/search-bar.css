@@ -1,21 +1,9 @@
-/*
-NAV LAYOUT
-
-nav
-  nav__btn --side-menu
-  nav__search
-  nav__btn --add-contact
-  nav__btn --schedule
-  nav__btn --dots-menu
-end
-*/
-
-.nav {
+.search-bar {
   border-bottom: 0.1rem solid lightgrey;
   display: flex;
 }
 
-.nav__btn {
+.search-bar__btn {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -26,43 +14,43 @@ end
   min-width: 6rem;
 }
 
-.nav__btn:hover {
+.search-bar__btn:hover {
   background-color: #48A3F3;
 }
 
-.nav__btn--add-contact {
+.search-bar__btn--add-contact {
   background-image: url("../images/add-contact-icon.svg");
 }
 
-.nav__btn--add-contact:hover {
+.search-bar__btn--add-contact:hover {
   background-image: url("../images/add-contact-icon-white.svg");
 }
 
-.nav__btn--dots-menu {
+.search-bar__btn--dots-menu {
   background-image: url("../images/dots-menu.svg");
 }
 
-.nav__btn--dots-menu:hover {
+.search-bar__btn--dots-menu:hover {
   background-image: url("../images/dots-menu-white.svg");
 }
 
-.nav__btn--schedule {
+.search-bar__btn--schedule {
   background-image: url("../images/schedule-icon.svg");
 }
 
-.nav__btn--schedule:hover {
+.search-bar__btn--schedule:hover {
   background-image: url("../images/schedule-icon-white.svg");
 }
 
-.nav__btn--side-menu {
+.search-bar__btn--side-menu {
   background-image: url("../images/toggle-menu-icon-clicked.svg");
 }
 
-.nav__btn--side-menu:hover {
+.search-bar__btn--side-menu:hover {
   background-image: url("../images/toggle-menu-icon-white.svg");
 }
 
-.nav__search {
+.search-bar__search {
   background: url("../images/search-icon.svg") 1rem no-repeat;
   background-size: 1.5rem 1.5rem;
   border: none;
@@ -73,6 +61,6 @@ end
   width: 80%;
 }
 
-.nav__search::placeholder {
+.search-bar__search::placeholder {
   color: lightgrey;
 }

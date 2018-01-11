@@ -1,20 +1,3 @@
-/*
-GRAPHS LAYOUTS (1 & 2)
-
-graphs (1)
-  graphs__display-wrapper
-    circle-graph --left
-    circle-graph
-    circle-graph --right
-  graphs__h2
-
-graphs (2)
-  graphs__img
-  graphs__h2
-
-end
-*/
-
 .graphs {
   align-items: center;
   display: flex;

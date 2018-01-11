@@ -1,42 +1,9 @@
-/*
-HEADER LAYOUT
-
-header
-  header__display-wrapper
-    div
-      header__h1
-      header__p
-        header-icon
-        header__link --blue
-    div
-      header__btn --delete
-      header__btn --edit
-      header__btn --bookmark
-      header__btn --open
-  header__link-list
-    header__list-item --selected
-      header__link --active-bold
-    header__list-item
-      header__link
-    header__list-item
-      header__link
-    header__list-item
-      header__link
-    header__list-item
-      header__link
-    header__list-item
-      header__link
-    header__list-item
-      header__link
-end
-*/
-
-.header {
+.overview {
   background-color: #fff;
   border-bottom: 0.2rem solid lightgrey;
 }
 
-.header__display-wrapper {
+.overview__display-wrapper {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -45,23 +12,23 @@ end
   width: 95%;
 }
 
-.header__h1 {
+.overview__h1 {
   color: #6F6F71;
   font-size: 2rem;
   margin: 0;
 }
 
-.header__p {
+.overview__p {
   font-size: 1rem;
   margin: 0.2rem 0 0 0;
 }
 
-.header__icon {
+.overview__icon {
   vertical-align: top;
   width: 1rem;
 }
 
-.header__btn {
+.overview__btn {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1rem;
@@ -75,37 +42,37 @@ end
   margin: 1rem;
   width: 2.5rem;
 }
-.header__btn:hover {
+.overview__btn:hover {
   background-color: #48A3F3;
   color: white;
 }
 
-.header__btn--bookmark {
+.overview__btn--bookmark {
   background-image: url("../images/bookmark-icon.svg");
 }
 
-.header__btn--bookmark:hover {
+.overview__btn--bookmark:hover {
   background-image: url("../images/bookmark-icon-white.svg");
 }
 
-.header__btn--delete {
+.overview__btn--delete {
   background-image: url("../images/delete-icon.svg");
   margin-right: 0;
 }
 
-.header__btn--delete:hover {
+.overview__btn--delete:hover {
   background-image: url("../images/delete-icon-white.svg");
 }
 
-.header__btn--edit {
+.overview__btn--edit {
   background-image: url("../images/edit-icon.svg");
 }
 
-.header__btn--edit:hover {
+.overview__btn--edit:hover {
   background-image: url("../images/edit-icon-white.svg");
 }
 
-.header__btn--open {
+.overview__btn--open {
   background-image: url(../images/dot-icon-green.svg);
   background-position: 1rem;
   border-radius: 2rem;
@@ -115,20 +82,20 @@ end
   width: auto;
 }
 
-.header__link-list {
+.overview__link-list {
   margin: auto;
   padding: 0;
   width: 95%;
 }
 
-.header__list-item {
+.overview__list-item {
   display: inline-block;
   font-size: 1rem;
   margin: 0 3rem 0 0;
   padding: 0 0rem 1rem 0;
 }
 
-.header__list-item--selected {
+.overview__list-item--selected {
   border-bottom: 0.4rem solid #48A3F3;
   color: black;
   font-weight: bold;
@@ -136,26 +103,26 @@ end
   top: 0.2rem;
 }
 
-.header__link {
+.overview__link {
   color: #A0A3A8;
   text-decoration: none;
 }
 
-.header__link:hover {
+.overview__link:hover {
   color: #48A3F3;
 }
 
-.header__link--active-bold {
+.overview__link--active-bold {
   bottom: .2rem;
   color: black;
   font-weight: bold;
   position: relative;
 }
 
-.header__link--blue {
+.overview__link--blue {
   color: #48A3F3;
 }
 
-.header__link--blue:hover {
+.overview__link--blue:hover {
   color: #99c659;
 }

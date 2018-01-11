@@ -1,32 +1,3 @@
-/*
-INFO-TABLE LAYOUT
-
-info-table
-  info-table__title --heading
-  info-table__description --heading
-    info-table__btn
-      info-table__icon
-  info-table__title --top-entry
-  info-table__description --top-entry
-  info-table__title
-  info-table__description
-  info-table__title
-  info-table__description
-  info-table__title
-  info-table__description
-  info-table__title
-  info-table__description
-  info-table__title --align-self-start
-  info-table__description --pad-top-bottom
-  info-table__title
-  info-table__description
-    info-table__img
-    info-table__caption
-  info-table__title
-  info-table__description
-end
-*/
-
 .info-table {
   background-color: #fff;
   display: grid;

@@ -1,23 +1,7 @@
-/*
-LAYOUT
-
-aside
-nav
-header
-main
-  feature
-    graphs --margin-right (1)
-    graphs (2)
-  main__bottom
-    info-table
-    social
-end
-*/
-
 @import "normalize.css";
-@import "aside.css";
-@import "nav.css";
-@import "header.css";
+@import "side-bar.css";
+@import "search-bar.css";
+@import "overview.css";
 @import "graphs.css";
 @import "circle-graphs.css";
 @import "info-table.css";
@@ -43,32 +27,23 @@ button {
   cursor: pointer;
 }
 
-.aside {
+.side-bar {
   grid-row-end: 4;
   grid-row-start: 1;
 }
 
-/*FEATURE SECTION, CURRENTLY CONTAINING GRAPHS*/
 
-.feature {
-  display: flex;
-  justify-content: space-between;
-  margin: 3rem auto 0 auto;
-  width: 95%;
-}
-
-/*MAIN BLOCK WRAPPER BENEATH HEADER, SPLIT INTO FEATURE AND .MAIN__BOTTOM*/
-.main {
+/*MAIN SECTION BENEATH OVERVIEW, SPLIT INTO FEATURE, DIVIDER, SUB-CONTENT*/
+main {
   background-color: #EDF2F6;
   display: flex;
   flex-direction: column;
 }
 
-.main__bottom {
+.feature {
   display: flex;
-  grid-column-start: 2;
   justify-content: space-between;
-  margin: 0 auto 2rem auto;
+  margin: 3rem auto 0 auto;
   width: 95%;
 }
 
@@ -108,36 +83,45 @@ button {
   background-image: url("../images/up-arrow-icon-white.svg");
 }
 
+.sub-content {
+  display: flex;
+  grid-column-start: 2;
+  justify-content: space-between;
+  margin: 0 auto 2rem auto;
+  width: 95%;
+}
+
+/*START OF MEDIA QUERIES - SMALL TO LARGE:*/
 @media screen and (max-width: 675px) {
-  .aside,
-  .nav,
-  .header,
-  .main {
+  .side-bar,
+  .search-bar,
+  .overview,
+  main {
     grid-column-end: 2;
     grid-column-start: 1;
   }
 
-  .main__bottom,
+  .sub-content,
   .feature {
     flex-direction: column;
   }
-  .aside {
+  .side-bar {
     grid-row-start: 2;
     justify-content: center;
     padding-bottom: 1rem;
   }
 
-  .aside__photo {
+  .side-bar__photo {
     grid-column-end: 4;
     grid-column-start: 1;
   }
 
-  .aside__form,
-  .aside__link-list {
+  .side-bar__form,
+  .side-bar__link-list {
     display: none;
   }
 
-  .aside__h2 {
+  .side-bar__h2 {
     background-image: url('../images/down-arrow-icon.svg');
     background-position: 2% 2rem;
     background-repeat: no-repeat;
@@ -146,51 +130,51 @@ button {
     padding-left: 3rem;
   }
 
-  .nav {
+  .search-bar {
     flex-wrap: wrap;
   }
 
-  .nav__search {
+  .search-bar__search {
     order: -1;
     width: 100%;
   }
 
-  .header__display-wrapper {
+  .overview__display-wrapper {
     flex-direction: column;
   }
 
-  .header__link-list {
+  .overview__link-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
-  .header__list-item {
+  .overview__list-item {
     margin: 0;
     padding: 1rem 0;
     text-align: center;
   }
 
-  .header__list-item--selected {
+  .overview__list-item--selected {
     grid-column-end: 3;
     grid-column-start: 2;
     grid-row-start: 3;
   }
 
-  .header__h1 {
+  .overview__h1 {
     font-size: 1.9rem;
   }
 
-  .header__h1,
-  .header__p {
+  .overview__h1,
+  .overview__p {
     text-align: center;
   }
 
-  .nav {
+  .search-bar {
     border-bottom: 2px solid lightgrey;
   }
 
-  .nav__search {
+  .search-bar__search {
     border: none;
     border-bottom: 2px solid lightgrey;
   }
@@ -214,7 +198,7 @@ button {
     font-size: 9px;
   }
 
-  .header__list-item {
+  .overview__list-item {
     margin: 0 2rem 0 0;
   }
 }
@@ -239,7 +223,6 @@ button {
   }
 }
 
-
 @media screen and (min-width: 2000px) {
   html {
     font-size: 22px;
@@ -254,10 +237,10 @@ button {
   }
 
   .feature,
-  .main__bottom,
+  .sub-content,
   .divider,
-  .header__display-wrapper,
-  .header__link-list {
+  .overview__display-wrapper,
+  .overview__link-list {
     width: 80%;
   }
 }
