@@ -8,4 +8,5 @@ Alternatively,
 * Open the `index.html` file in your preferred browser
 
 Original Comp
+
 ![original comp](/images/static-comp-3.jpg)
